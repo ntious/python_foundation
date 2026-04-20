@@ -77,11 +77,13 @@ Students should read:
 
 ## Instructor Note
 
-Instructor-facing materials are available in [`instructor/`](instructor/). Start with [`instructor/instructor_guide.md`](instructor/instructor_guide.md) for teaching approach, pacing, assessment alignment, and common beginner issues.
+Instructor-facing materials for this course are maintained in a separate private repository.
+
+If you are an instructor interested in using or adapting this course, please contact the repository maintainer for access and additional guidance.
 
 ## Course Learning Outcomes
 
 By the end of this course, students should be able to:
 
-1. Write and run simple Python programs that use variables, input, decisions, loops, lists, and functions.
-2. Use Python to explore small real-world information technology tasks such as checking data, organizing information, debugging errors, and solving basic problems.
+1. Apply fundamental Python constructs, including variables, data types, and control structures, to solve simple problems.
+2. Develop and debug basic Python programs that address simple real-world scenarios.
