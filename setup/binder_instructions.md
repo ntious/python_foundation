@@ -23,6 +23,8 @@ If you need your work to save automatically over time, Google Colab may be a bet
 
 The first load may take several minutes. This is normal. Binder is preparing Python and the notebook files for you.
 
+[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ntious/python_foundation/HEAD?urlpath=lab/tree/notebooks/00_getting_started.ipynb)
+
 ## How to Open a Notebook
 
 1. After Binder opens, find the file browser on the left side of the page.

@@ -4,7 +4,7 @@ This course evaluates your progress with practical Python work. The focus is on 
 
 This page gives a general course-level overview. Your instructor may provide more specific grading details for each assignment.
 
-## What Instructors Look For
+## What Your Instructor Is Looking For
 
 Instructors usually look for evidence of:
 
