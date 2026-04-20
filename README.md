@@ -87,3 +87,13 @@ By the end of this course, students should be able to:
 
 1. Apply fundamental Python constructs, including variables, data types, and control structures, to solve simple problems.
 2. Develop and debug basic Python programs that address simple real-world scenarios.
+
+## Developed By
+
+This course and repository were developed by  
+**I. K. Nti**  
+Assistant Professor, Information Technology
+
+## License
+
+This project is licensed under the terms of the license included in this repository. See the [LICENSE](LICENSE) file for details.
