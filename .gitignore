@@ -1,0 +1,64 @@
+# This .gitignore is designed for a beginner-friendly teaching repository.
+# It prevents accidental commits of environment files, editor settings,
+# and temporary artifacts while keeping all learning materials visible.
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.*
+*.env
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.code-workspace
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# =========================
+# Logs / Temporary Files
+# =========================
+*.log
+*.tmp
+*.bak
+*.swp
+
+# =========================
+# Notebook Exports
+# =========================
+*.html
+*.pdf
+
+# =========================
+# Misc
+# =========================
+*.zip
+*.tar
+*.gz
