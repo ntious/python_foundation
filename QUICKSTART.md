@@ -4,7 +4,7 @@ Use this guide to begin the course in about 5 minutes. You do not need to instal
 
 ## Step 1: Launch the Course
 
-[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ntious/python_fundation/HEAD?urlpath=lab/tree/notebooks/00_getting_started.ipynb)
+[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ntious/python_foundation/HEAD?urlpath=lab/tree/notebooks/00_getting_started.ipynb)
 
 1. Click the Binder button above.
 2. Wait for the course environment to load.
