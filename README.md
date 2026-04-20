@@ -6,7 +6,7 @@ The course uses guided notebooks, short practice tasks, and practical examples f
 
 ## 🚀 Launch with Binder
 
-[![Launch Binder](https://mybinder.org/badge_logo.svg)](BINDER_LINK_HERE)
+[![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ntious/python_fundation/HEAD?urlpath=lab/tree/notebooks/00_getting_started.ipynb)
 
 Click the button above to start the course instantly in your browser. No Python installation is required.
 
