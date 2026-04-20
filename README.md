@@ -63,7 +63,6 @@ The quickstart guide explains how to launch Binder, open the first notebook, run
 | `templates/` | Reusable notebook, lab, mini project, reflection, and fix-log templates |
 | `docs/` | Student-facing guidance for notebooks, submissions, grading, AI use, and FAQs |
 | `setup/` | Binder, Colab, Replit, and troubleshooting instructions |
-| `instructor/` | Instructor guide, pacing guide, assessment map, and common student errors |
 | `data/` | Small beginner-friendly CSV files for practice |
 | `COURSE_MAP.md` | Module-by-module map of notebooks, concepts, and skills |
 | `ASSESSMENT_OVERVIEW.md` | Overview of course assessment expectations |
