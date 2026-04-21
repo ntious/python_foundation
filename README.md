@@ -2,9 +2,11 @@
 
 This repository contains beginner-friendly learning materials for a 1-credit Python course designed for students with little or no programming background, particularly those from non-computing disciplines.
 
-The course is built around guided notebooks, short practice tasks, and practical examples drawn from everyday information technology contexts. It emphasizes learning by doing—helping students build confidence while developing the ability to write small, clear, and useful programs.
+The course adopts a hands-on, utility-first approach using guided notebooks, short practice tasks, and practical examples grounded in real-world information technology contexts. The emphasis is on developing computational thinking through active learning, enabling students to write small, clear, and purposeful programs.
 
-The course provides approximately 12 hours of structured, guided instruction introducing foundational Python programming concepts through hands-on activities, with additional time expected for practice, reflection, and a guided mini project.
+The course provides approximately 12 hours of structured, guided instruction introducing foundational Python programming concepts, with additional time expected for independent practice, reflection, and completion of a guided mini project.
+
+This course is intended as a foundational introduction to programming literacy rather than a comprehensive programming course.
 
 ## 🚀 Launch with Binder
 
