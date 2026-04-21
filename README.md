@@ -1,4 +1,4 @@
-# IT1009C: Introduction to Python for Information Technology
+# Introduction to Python for Information Technology
 
 This repository contains beginner-friendly learning materials for a 1-credit Python course. It is designed for students with little or no programming background, especially students from non-computing disciplines.
 
