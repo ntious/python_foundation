@@ -1,8 +1,10 @@
 # Introduction to Python for Information Technology
 
-This repository contains beginner-friendly learning materials for a 1-credit Python course. It is designed for students with little or no programming background, especially students from non-computing disciplines.
+This repository contains beginner-friendly learning materials for a 1-credit Python course designed for students with little or no programming background, particularly those from non-computing disciplines.
 
-The course uses guided notebooks, short practice tasks, and practical examples from everyday information technology. The focus is on learning by doing, building confidence, and writing small programs that are clear and useful.
+The course is built around guided notebooks, short practice tasks, and practical examples drawn from everyday information technology contexts. It emphasizes learning by doing—helping students build confidence while developing the ability to write small, clear, and useful programs.
+
+The course provides approximately 12 hours of structured, guided instruction introducing foundational Python programming concepts through hands-on activities, with additional time expected for practice, reflection, and a guided mini project.
 
 ## 🚀 Launch with Binder
 
