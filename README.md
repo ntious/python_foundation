@@ -90,7 +90,7 @@ By the end of this course, students should be able to:
 
 ## Developed By
 
-This course and repository were developed by  
+This repository was developed by  
 **I. K. Nti**  
 Assistant Professor, Information Technology
 
