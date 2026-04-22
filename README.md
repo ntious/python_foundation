@@ -1,6 +1,6 @@
 # Introduction to Python for Information Technology
 
-## 🚀 Program Overview
+## Program Overview
 
 This repository contains beginner-friendly learning materials for a 1-credit Python course designed for students with little or no programming background, particularly those from non-computing disciplines.
 
@@ -12,7 +12,7 @@ This course is intended as a **foundational introduction to programming literacy
 
 ---
 
-## 🌍 Python and Career Pathways
+## Python and Career Pathways
 
 Python is widely used across multiple areas of modern computing, including:
 
@@ -24,7 +24,7 @@ This course introduces the foundational skills needed to begin exploring these a
 
 ---
 
-## 🚀 Launch with Binder
+## Launch with Binder
 
 [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ntious/python_foundation/HEAD?urlpath=lab/tree/notebooks/00_getting_started.ipynb)
 
@@ -34,7 +34,12 @@ The first Binder launch may take a few minutes while the course environment load
 
 ---
 
-## 🎯 What Students Will Learn
+## Who this is for
+IT / CIS / non-CS majors learning programming for the first time
+High school / first-year college intro programming
+Workforce development and bridge programs
+
+## What Students Will Learn
 
 Students will practice how to:
 
@@ -51,7 +56,7 @@ Students will practice how to:
 
 ---
 
-## 🧩 Course Structure
+## Course Structure
 
 The course begins with a getting-started notebook, then moves through Modules 1–12. Each notebook introduces a small set of Python ideas, shows examples, and provides guided practice.
 
@@ -63,7 +68,7 @@ Then continue through the notebooks in order. The final notebook is a guided min
 
 ---
 
-## ▶️ How to Get Started
+## How to Get Started
 
 If you are a student, begin with the 5-minute start guide:
 
@@ -73,7 +78,7 @@ This guide explains how to launch Binder, run code cells, complete activities, a
 
 ---
 
-## 🔁 Recommended Workflow
+## Recommended Workflow
 
 1. Launch the course with Binder  
 2. Open the `notebooks/` folder  
@@ -85,7 +90,7 @@ This guide explains how to launch Binder, run code cells, complete activities, a
 
 ---
 
-## 🏫 How to Use This Course (For Instructors & Institutions)
+## For Instructors & Institutions
 
 This repository is designed to be easily adopted and adapted by instructors, schools, and institutions.
 
@@ -118,7 +123,7 @@ Instructors are encouraged to:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 | Folder or File | Purpose |
 |---|---|
@@ -136,7 +141,7 @@ Instructors are encouraged to:
 
 ---
 
-## 🤖 AI Usage Note
+## AI Usage Note
 
 AI tools may support learning (e.g., explaining errors or providing hints), but must not replace student understanding or practice.
 
@@ -146,7 +151,7 @@ Students should review:
 
 ---
 
-## 👩‍🏫 Instructor Note
+## Instructor Note
 
 Instructor-facing materials are maintained in a separate private repository.
 
@@ -154,7 +159,7 @@ Instructors interested in adopting or adapting this course are encouraged to con
 
 ---
 
-## 🎓 Course Learning Outcomes
+## Course Learning Outcomes
 
 By the end of this course, students will be able to:
 
@@ -163,14 +168,14 @@ By the end of this course, students will be able to:
 
 ---
 
-## 👨‍💻 Developed By
+## Developed By
 
 **I. K. Nti**  
 Assistant Professor, Information Technology  
 
 ---
 
-## 📄 License
+## License
 
 - Code: MIT License ([LICENSE](LICENSE))  
 - Educational Materials: Creative Commons Attribution 4.0 ([CC BY 4.0](OER_LICENSE.md))  
