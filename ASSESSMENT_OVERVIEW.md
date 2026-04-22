@@ -90,7 +90,6 @@ Students may be asked to explain their code. This helps confirm that submitted w
 
 
 ## AI Policy Reference
-
 AI tools may support learning, but students remain responsible for what they submit. Any AI-assisted code must be tested, understood, and explained.
 
 See:
