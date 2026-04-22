@@ -1,6 +1,6 @@
 # Open Educational Resources (OER) License
 
-© 2026 Kofi Nti
+© 2026 Isaac K. Nti
 
 All instructional materials in this repository (including notebooks, documentation, and teaching resources) are licensed under the:
 
