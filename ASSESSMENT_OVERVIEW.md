@@ -17,7 +17,6 @@ Guided labs help assess:
 - running and testing code  
 - applying one or two Python concepts at a time  
 
----
 
 ### Notebook Exercises
 
@@ -30,7 +29,6 @@ Notebook exercises help assess:
 - reading and interpreting output  
 - making small corrections and improvements  
 
----
 
 ### Mini Project
 
@@ -50,7 +48,6 @@ The project should include:
 
 The mini project should remain small, clear, and explainable. A simple, well-understood program is better than a complex one the student cannot describe.
 
----
 
 ### Reflections
 
@@ -63,7 +60,6 @@ Reflections help assess:
 - awareness of debugging and revision  
 - responsible learning habits  
 
----
 
 ## Grading Philosophy
 
@@ -77,7 +73,6 @@ Assessment in this course follows a beginner-centered approach:
 
 A single mistake should not automatically invalidate an entire submission. For example, a student may have a small syntax error but still demonstrate correct reasoning, completed steps, and useful debugging notes.
 
----
 
 ## Student Expectations
 
@@ -93,7 +88,6 @@ Students are expected to:
 
 Students may be asked to explain their code. This helps confirm that submitted work reflects their own learning.
 
----
 
 ## AI Policy Reference
 
@@ -103,7 +97,6 @@ See:
 
 - [`docs/ai_usage_guidelines.md`](docs/ai_usage_guidelines.md)
 
----
 
 ## Instructor Note
 
