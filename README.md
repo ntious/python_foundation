@@ -102,7 +102,7 @@ Assistant Professor, Information Technology
 ## License
 This project is licensed under the terms of the license included in this repository. 
 - Code: MIT License. See the [LICENSE](LICENSE) file for details. 
-- Educational Materials: Creative Commons Attribution 4.0 (CC BY 4.0) [](OER_LICENSE.md)  
+- Educational Materials: [Creative Commons Attribution 4.0 (CC BY 4.0)](OER_LICENSE.md)  
 
 This project is distributed as Open Educational Resources (OER) to support broad educational use and adaptation.
 
