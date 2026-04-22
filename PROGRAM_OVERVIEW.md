@@ -64,3 +64,24 @@ This program aims to:
 This program is designed as a **foundational introduction to programming literacy**, rather than a comprehensive programming course.
 
 It prioritizes clarity, accessibility, and real-world relevance over technical depth.
+
+
+## Sustainability, Scalability, and Open Educational Resources (OER)
+
+The program is designed to be:
+
+- reusable across semesters  
+- adaptable to different learning environments  
+- scalable with minimal additional cost  
+
+All instructional materials are developed and shared as **Open Educational Resources (OER)** through a publicly accessible repository.
+
+This approach enables:
+- adoption by other colleges, high schools, and community programs  
+- adaptation to different student populations and instructional contexts  
+- continuous improvement through instructor feedback and iteration  
+- reduced cost barriers for institutions and students  
+
+The modular notebook-based design allows instructors to reuse full modules or selectively integrate content into existing courses.
+
+By leveraging an open-access model, the program supports broader access to programming education and promotes collaboration across institutions.
