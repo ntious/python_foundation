@@ -1,4 +1,5 @@
 # Course Map
+
 ![Course Map](course_map.png)
 
 This map shows how the notebooks fit together. It is useful for instructors, students who want a big-picture view, and anyone reviewing the course structure.
