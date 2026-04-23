@@ -20,11 +20,9 @@ Python is widely used across multiple areas of modern computing, including:
 - artificial intelligence and machine learning  
 - software development and IT systems  
 
+This course introduces the foundational skills needed to begin exploring these areas. Students do not need to choose a career path now—this course provides the starting point.
 ## Course Overview
 ![Course Map](docs/course_map.png)
-
-
-This course introduces the foundational skills needed to begin exploring these areas. Students do not need to choose a career path now—this course provides the starting point.
 ---
 
 ## Launch with Binder
