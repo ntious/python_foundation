@@ -12,7 +12,7 @@ By the end of the course, you should be able to:
 
 - write and run small Python programs
 - use variables to store information
-- work with numbers, text, lists, and simple data files
+- work with numbers, text, lists, and simple structured data
 - use `if` statements to make decisions
 - use loops to repeat useful actions
 - read and reason about program output
@@ -43,7 +43,7 @@ You will practice Python by completing small tasks such as:
 - calculating totals and averages
 - checking whether a value meets a condition
 - processing lists of names, scores, expenses, or login attempts
-- reading simple CSV data
+- processing small lists of sample values
 - identifying patterns in output
 - fixing code that does not work yet
 - improving a solution after testing it

@@ -28,7 +28,7 @@ For beginner assignments, this may include:
 - calculating a total or average correctly
 - writing an `if` statement that checks the right condition
 - using a loop to process each item in a list
-- reading a simple data file correctly
+- processing each value in a small list correctly
 
 Small mistakes can happen. One error should not automatically erase the value of the rest of your work.
 
@@ -70,7 +70,7 @@ Check for:
 
 - required file names or formats
 - required notebook sections
-- specific data files to use
+- specific starter values or examples to use
 - reflection or explanation prompts
 - limits on AI assistance or outside help
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide supports instructors delivering the Python Foundations program to beginner learners with no prior programming experience.
+This guide supports instructors delivering IT1009C: Introduction to Python for Information Technology or adapting these Python foundations materials for beginner learners with no prior programming experience.
 
 The course is designed to be:
 - beginner-friendly  

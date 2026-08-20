@@ -92,7 +92,7 @@ Focus on whether the output makes sense for the task.
 
 ### File Not Found
 
-This error means the notebook cannot find a file it needs, such as a CSV file from the `data/` folder.
+This error means Python cannot find a file named in the code. The core course notebooks do not require external data files, but an instructor-created extension might.
 
 To fix it:
 

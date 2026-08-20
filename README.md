@@ -1,4 +1,4 @@
-# Introduction to Python for Information Technology
+# IT1009C: Introduction to Python for Information Technology
 
 ## Program Overview
 
@@ -21,8 +21,11 @@ Python is widely used across multiple areas of modern computing, including:
 - software development and IT systems  
 
 This course introduces the foundational skills needed to begin exploring these areas. Students do not need to choose a career path now—this course provides the starting point.
+
 ## Course Overview
-![Course Map](docs/course_map.png)
+
+![Visual overview of the IT1009C notebook sequence from Python context through the guided mini project](docs/course_map.png)
+
 ---
 
 ## Launch with Binder
@@ -35,10 +38,11 @@ The first Binder launch may take a few minutes while the course environment load
 
 ---
 
-## Who this is for
-IT / CIS / non-CS majors learning programming for the first time
-High school / first-year college intro programming
-Workforce development and bridge programs
+## Who This Is For
+
+- IT, CIS, and non-CS majors learning programming for the first time
+- high school and first-year college introductory programming learners
+- workforce development and bridge programs
 
 ## What Students Will Learn
 
@@ -65,7 +69,7 @@ Start with:
 
 - [`notebooks/00_getting_started.ipynb`](notebooks/00_getting_started.ipynb)
 
-Then continue through the notebooks in order. The final notebook is a guided mini project that integrates input, variables, conditionals, loops, lists, output, testing, and reflection.
+Then continue through the notebooks in order. Module 11 is a light preview of where Python can go next; dictionaries and libraries are not core mastery requirements. The final notebook is a guided mini project that integrates input, variables, conditionals, loops, lists, output, testing, and reflection.
 
 ---
 
@@ -132,10 +136,9 @@ Instructors are encouraged to:
 | `templates/` | Reusable templates for labs, projects, reflections |
 | `docs/` | Student-facing guidance (AI use, submission, FAQs) |
 | `setup/` | Binder, Colab, Replit, and troubleshooting instructions |
-| `data/` | Small beginner-friendly datasets |
+| `data/` | Optional synthetic sample datasets for instructor-created extensions; file reading is not part of the core course |
 | `COURSE_MAP.md` | Module-by-module overview |
 | `ASSESSMENT_OVERVIEW.md` | Student-facing assessment expectations |
-| `ASSESSMENT_FRAMEWORK.md` | Program-level assessment structure |
 | `PROGRAM_OVERVIEW.md` | Program design and goals |
 | `INSTRUCTOR_GUIDE.md` | Teaching and delivery guidance |
 | `IMPACT_METRICS.md` | Evaluation and outcome tracking |
@@ -154,7 +157,7 @@ Students should review:
 
 ## Instructor Note
 
-Instructor-facing materials are maintained in a separate private repository.
+Detailed instructor-facing assessment and support materials are maintained separately and are not part of this public repository.
 
 Instructors interested in adopting or adapting this course are encouraged to contact the repository maintainer.
 

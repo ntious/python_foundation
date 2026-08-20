@@ -4,7 +4,7 @@ This file explains the columns used in the sample CSV files.
 
 ## `sample_scores.csv`
 
-- `student_name`: the student's first name
+- `student_name`: a fictional learner label
 - `score`: the student's score on one quiz or practice activity
 
 ## `sample_expenses.csv`
@@ -15,6 +15,6 @@ This file explains the columns used in the sample CSV files.
 
 ## `sample_logins.csv`
 
-- `username`: the user account name
+- `username`: a fictional sample account label
 - `status`: whether the login was `success` or `failed`
 - `attempts`: the number of login attempts for that example

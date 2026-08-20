@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document defines how the effectiveness of the Introfuction Python Foundations program is measured.
+This document defines how the effectiveness of IT1009C: Introduction to Python for Information Technology and its reusable Python foundations materials is measured.
 
 The goal is to evaluate:
 - student learning

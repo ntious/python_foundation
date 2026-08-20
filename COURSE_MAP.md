@@ -1,5 +1,5 @@
 # Course Map
-![Course Map](docs/course_map.png)
+![Visual overview of the IT1009C notebook sequence from Python context through the guided mini project](docs/course_map.png)
 
 This map shows how the notebooks fit together. It is useful for instructors, students who want a big-picture view, and anyone reviewing the course structure.
 
@@ -20,7 +20,7 @@ The course includes a getting-started notebook followed by Modules 1-12.
 | 8 | Lists as Data | `notebooks/08_lists_as_data.ipynb` | Lists, indexing, processing several values | Store related data and process it with loops |
 | 9 | Functions | `notebooks/09_functions.ipynb` | Function definitions, calling functions, reusable steps | Organize repeated logic into simple functions |
 | 10 | Debugging and Validation | `notebooks/10_debugging_and_validation.ipynb` | Error messages, testing, validation | Find mistakes, test changes, improve reliability |
-| 11 | Python Tools and Applications | `notebooks/11_python_tools_and_applications.ipynb` | Simple Python tools, practical applications | Recognize how Python supports everyday IT work |
+| 11 | Python Tools and Applications | `notebooks/11_python_tools_and_applications.ipynb` | Light exposure to dictionaries, libraries, and next steps | Recognize additional Python capabilities without a mastery expectation |
 | 12 | Guided Mini Project | `notebooks/12_guided_mini_project.ipynb` | Program workflow, integration, testing, reflection | Build and explain a small complete program |
 
 ## CLO Mapping
@@ -51,7 +51,6 @@ Strongly supported by:
 - Module 6: multi-condition logic
 - Module 8: data-style list practice
 - Module 10: debugging and validation
-- Module 11: tools and applications
 - Module 12: guided mini project
 
 ## Progression Summary

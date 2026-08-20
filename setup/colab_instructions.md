@@ -50,9 +50,9 @@ This option is useful if your instructor gives you a notebook file directly.
 
 Run cells in order. Later cells may depend on variables or code from earlier cells.
 
-## How to Upload Data Files
+## Optional: Upload a Data File
 
-Some notebooks may use files from the course `data/` folder.
+The core notebooks do not require data files. If your instructor assigns an optional extension using a file from the course `data/` folder, upload it as follows:
 
 1. In Colab, look for the folder icon on the left side of the page.
 2. Click the folder icon to open the file panel.
