@@ -175,7 +175,7 @@ By the end of this course, students will be able to:
 ## Developed By
 
 **Isaac. K. Nti**  
-Assistant Professor, School of Information Technology
+Assistant Professor, School of Information Technology, 
 University of Cincinnati
 
 ---
