@@ -51,17 +51,18 @@ Debugging tasks help assess:
 
 The guided mini project asks students to build a small Python program that combines multiple course concepts.
 
-The project should include:
+The official requirements are listed in [`notebooks/12_guided_mini_project.ipynb`](notebooks/12_guided_mini_project.ipynb). In summary, the project should include:
 
-- user input or starter values  
+- at least one user input with `input()`
 - clearly named variables  
 - at least one conditional  
 - at least one loop  
 - at least one list  
 - arithmetic or simple data processing  
 - clear and meaningful output  
-- basic testing notes  
-- a reflection or fix log (when required)  
+- one normal-case test and one simple edge-case test
+- a short Fix Log describing an error and how it was fixed
+- a brief reflection written in the student's own words
 
 The goal is to demonstrate **understanding and integration of concepts**, not technical complexity.
 
@@ -129,9 +130,7 @@ See:
 
 ## 👩‍🏫 Instructor Note
 
-More detailed assessment alignment, grading guidance, and instructional support materials are maintained in a separate private instructor repository.
-
-Instructors interested in using or adapting this course should contact the repository maintainer for access.
+Detailed instructor-facing assessment and support materials are maintained separately and are not part of this public repository.
 
 
 ## 📌 Final Note
