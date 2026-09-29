@@ -1,6 +1,6 @@
 # Course website maintenance
 
-The website uses the IT4065C site's MkDocs Material navigation approach with a beginner-focused design. Notebook and Markdown files in the repository remain the authoritative teaching materials. Do not edit generated pages.
+The website uses MkDocs Material navigation approach with a beginner-focused design. Notebook and Markdown files in the repository remain the authoritative teaching materials. Do not edit generated pages.
 
 From the repository root, in a separate website virtual environment:
 
