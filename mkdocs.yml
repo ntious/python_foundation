@@ -1,0 +1,47 @@
+site_name: IT1009C · Python Foundations
+site_url: https://ntious.github.io/python_foundation/
+site_description: A welcoming first step into Python. Small programs, guided practice, and debugging confidence.
+repo_url: https://github.com/ntious/python_foundation
+repo_name: Course repository
+docs_dir: .site-build/source
+site_dir: .site-build/output
+exclude_docs: |
+  !/templates/
+theme:
+  name: material
+  font: false
+  palette:
+    primary: custom
+    accent: custom
+  icon:
+    logo: material/language-python
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - content.code.copy
+    - search.suggest
+    - search.highlight
+plugins:
+  - search
+extra_css:
+  - stylesheets/course.css
+extra:
+  generator: false
+copyright: Code · MIT. Educational content · CC BY 4.0. I. K. Nti.
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences
+validation:
+  nav:
+    omitted_files: info
+  links:
+    not_found: warn
+    anchors: warn

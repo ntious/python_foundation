@@ -1,5 +1,7 @@
 # IT1009C: Introduction to Python for Information Technology
 
+[Visit the course website](https://ntious.github.io/python_foundation/) for searchable lessons, notebook downloads, and a guided path through the course.
+
 ## Program Overview
 
 This repository contains beginner-friendly learning materials for a 1-credit Python course designed for students with little or no programming background, particularly those from non-computing disciplines.
