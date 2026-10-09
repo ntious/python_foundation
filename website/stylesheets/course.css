@@ -1,0 +1,22 @@
+:root { --md-primary-fg-color: #174c43; --md-accent-fg-color: #17685b; --md-default-bg-color: #fffdf8; --md-text-font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; --md-code-font-family: ui-monospace, Consolas, monospace; }
+.md-header { box-shadow: none; }
+.md-tabs { background: #123e36; }
+.md-typeset { font-size: .85rem; line-height: 1.75; }
+.md-typeset h1 { color: #163c35; font-weight: 750; letter-spacing: -.035em; }
+.md-typeset h2 { font-weight: 700; letter-spacing: -.015em; }
+.course-hero { background: linear-gradient(115deg, #eaf3e9, #f9f1d9); border: 1px solid #cbdcc8; border-radius: 1.2rem; padding: clamp(1.3rem, 4vw, 3rem); margin: 0 0 2rem; }
+.course-hero h1 { font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.13; margin-top: .7rem; }
+.course-hero > p { max-width: 42rem; }
+.course-eyebrow { font-size: .65rem; font-weight: 800; letter-spacing: .13em; color: #285448; }
+.course-facts { font-size: .75rem; color: #36574d; margin-bottom: 0; }
+.course-facts span { padding: 0 .5rem; }
+.md-typeset .md-button { border-radius: .4rem; margin: .3rem .3rem .3rem 0; padding: .6em 1em; }
+.md-typeset .grid.cards > ul > li { border-color: #d6dfd6; border-radius: .65rem; background: #fff; padding: 1.15rem; box-shadow: 0 3px 12px #123e3605; }
+.lesson-grid a { display: inline-block; padding: .3rem 0; }
+.md-typeset pre { border: 1px solid #d6dfd6; border-radius: .4rem; }
+.md-typeset code { font-size: .82em; }
+.md-typeset table:not([class]) { display: block; overflow-x: auto; }
+.md-typeset a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid #9d4e00; outline-offset: 4px; }
+.md-footer { background: #123e36; }
+@media (max-width: 600px) { .course-hero { padding: 1.1rem; } .course-hero h1 { font-size: 2rem; } .md-typeset .md-button { font-size: .75rem; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }

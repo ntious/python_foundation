@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you adapt or reuse this curriculum, please cite the repository."
+title: "Introduction to Python for Information Technology"
+type: software
+authors:
+  - family-names: Nti
+    given-names: Isaac Kofi
+    orcid: "https://orcid.org/0000-0001-9257-4295"
+repository-code: "https://github.com/ntious/python_foundation"
+url: "https://github.com/ntious/python_foundation"
+license: MIT
+keywords:
+  - Python education
+  - information technology
+  - computing education
+  - open educational resources
+  - introductory programming
