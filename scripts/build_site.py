@@ -77,13 +77,14 @@ def build():
             destination.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(path, destination)
     shutil.copytree(ROOT / 'website/stylesheets', SOURCE / 'stylesheets')
+    shutil.copytree(ROOT / 'website/javascripts', SOURCE / 'javascripts')
     lessons = sorted((ROOT / 'notebooks').glob('*.ipynb'))
     titles = []
     for path in lessons:
         first = ''.join(json.loads(path.read_text())['cells'][0]['source']).splitlines()[0]
         title = re.sub(r'^#\s*(?:Module \d+:\s*|\d+\s+)?', '', first)
         titles.append((path, title))
-    cards = '\n\n'.join(f'- **{i:02d} · [{title}]({p.relative_to(ROOT).with_suffix(".md").as_posix()})**' for i, (p, title) in enumerate(titles))
+    cards = '\n'.join(f'- **{i:02d} · [{title}]({p.relative_to(ROOT).with_suffix(".md").as_posix()})**' for i, (p, title) in enumerate(titles))
     home = (ROOT / 'website/home.md').read_text().replace('<!-- LESSONS -->', cards)
     (SOURCE / 'index.md').write_text(home)
     for folder, title in [('setup', 'Choose your notebook environment'), ('templates', 'Practice templates'), ('data', 'Optional sample data')]:

@@ -33,9 +33,21 @@ def check():
             errors = []
             page.on('pageerror', lambda error: errors.append(str(error)))
             page.goto(base)
+            page.locator('.cell-run').click()
+            assert page.locator('[data-out]').is_visible()
+            page.get_by_role('button', name='Hide output', exact=True).click()
+            assert not page.locator('[data-out]').is_visible()
+            assert page.locator('.lesson-path li').count() == 13
+            page.locator('label[title="Switch to dark mode"]').click()
+            assert page.locator('body').get_attribute('data-md-color-scheme') == 'slate'
+            page.locator('label[title="Switch to light mode"]').click()
             page.get_by_role('link', name='Start your first lesson', exact=True).click()
             page.wait_for_url('**/notebooks/00_getting_started/')
             page.wait_for_load_state('networkidle')
+            page.get_by_role('button', name='Mark this lesson as done').click()
+            assert page.locator('.lesson-done').get_attribute('aria-pressed') == 'true'
+            page.reload()
+            assert page.locator('.lesson-done').get_attribute('aria-pressed') == 'true'
             page.get_by_role('button', name='Copy to clipboard').first.click()
             copied = page.evaluate('navigator.clipboard.readText()')
             assert 'print("Hello, world!")' in copied
@@ -51,6 +63,8 @@ def check():
             assert page.locator('.md-search-result').inner_text().find('Fix Log') >= 0
             page.keyboard.press('Escape')
             page.goto(base)
+            assert page.locator('[data-progress]').is_visible()
+            assert '1 of 13' in page.locator('.progress-text').inner_text()
             page.screenshot(path=str(Path(tempfile.gettempdir()) / 'python-foundation-desktop.png'), full_page=True)
             for width in (390, 320):
                 page.set_viewport_size({'width': width, 'height': 844})
@@ -65,7 +79,7 @@ def check():
             page.screenshot(path=str(Path(tempfile.gettempdir()) / 'python-foundation-mobile.png'), full_page=True)
             assert not errors, errors
             browser.close()
-            print('PASS: desktop/mobile navigation, search, code clipboard, notebook download, 320/390px layout, no JavaScript errors.')
+            print('PASS: hero interaction, light/dark themes, saved lesson progress, desktop/mobile navigation, search, code clipboard, notebook download, 320/390px layout, no JavaScript errors.')
     finally:
         server.shutdown()
 

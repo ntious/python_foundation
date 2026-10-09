@@ -9,10 +9,24 @@ exclude_docs: |
   !/templates/
 theme:
   name: material
-  font: false
+  font:
+    text: Figtree
+    code: JetBrains Mono
   palette:
-    primary: custom
-    accent: custom
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   icon:
     logo: material/language-python
   features:
@@ -27,6 +41,8 @@ plugins:
   - search
 extra_css:
   - stylesheets/course.css
+extra_javascript:
+  - javascripts/course.js
 extra:
   generator: false
 copyright: Code · MIT. Educational content · CC BY 4.0. I. K. Nti.
