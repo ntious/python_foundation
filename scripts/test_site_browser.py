@@ -33,6 +33,10 @@ def check():
             errors = []
             page.on('pageerror', lambda error: errors.append(str(error)))
             page.goto(base)
+            logo = page.locator('.md-header .md-logo img')
+            assert logo.get_attribute('src').endswith('images/logo.svg')
+            assert logo.evaluate('(img) => img.complete && img.naturalWidth > 0')
+            assert page.locator('link[rel="icon"]').get_attribute('href').endswith('images/logo.svg')
             page.locator('.cell-run').click()
             assert page.locator('[data-out]').is_visible()
             page.get_by_role('button', name='Hide output', exact=True).click()

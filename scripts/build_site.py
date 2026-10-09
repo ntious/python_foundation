@@ -78,6 +78,7 @@ def build():
             shutil.copyfile(path, destination)
     shutil.copytree(ROOT / 'website/stylesheets', SOURCE / 'stylesheets')
     shutil.copytree(ROOT / 'website/javascripts', SOURCE / 'javascripts')
+    shutil.copytree(ROOT / 'website/images', SOURCE / 'images')
     lessons = sorted((ROOT / 'notebooks').glob('*.ipynb'))
     titles = []
     for path in lessons:
