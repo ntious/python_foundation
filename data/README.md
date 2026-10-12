@@ -1,6 +1,6 @@
 # Data Folder
 
-This folder contains small practice datasets for **IT1009C: Introduction to Python for Information Technology**.
+This folder contains small practice datasets for **IT1009C · Introduction to Python**.
 
 The files are intentionally simple and clearly synthetic. They are optional resources for instructors who want to create later extensions or demonstrations. The core 1-credit course does not teach or assess CSV/file reading.
 

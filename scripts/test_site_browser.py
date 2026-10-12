@@ -33,6 +33,8 @@ def check():
             errors = []
             page.on('pageerror', lambda error: errors.append(str(error)))
             page.goto(base)
+            assert page.title() == 'IT1009C · Introduction to Python'
+            assert page.locator('.course-chip').inner_text() == 'IT1009C · Introduction to Python'
             logo = page.locator('.md-header .md-logo img')
             assert logo.get_attribute('src').endswith('images/logo.svg')
             assert logo.evaluate('(img) => img.complete && img.naturalWidth > 0')

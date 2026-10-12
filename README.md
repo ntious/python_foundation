@@ -1,4 +1,4 @@
-# IT1009C: Introduction to Python for Information Technology
+# IT1009C · Introduction to Python
 
 [Visit the course website](https://ntious.github.io/python_foundation/) for searchable lessons, notebook downloads, and a guided path through the course.
 

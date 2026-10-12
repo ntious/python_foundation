@@ -1,6 +1,6 @@
 # Course Overview
 
-## IT1009C: Introduction to Python for Information Technology
+## IT1009C · Introduction to Python
 
 Welcome to IT1009C. This course introduces Python through short, guided practice activities that focus on useful, real-world information technology tasks.
 

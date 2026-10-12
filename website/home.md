@@ -8,11 +8,11 @@ hide:
 
 <div class="hero-copy" markdown>
 
-<span class="course-chip">IT1009C: your first steps in Python</span>
+<span class="course-chip">IT1009C · Introduction to Python</span>
 
 # Small steps. Useful code. Growing confidence.
 
-Welcome to Introduction to Python for Information Technology. Learn to read, run, change, and explain small Python programs, one guided notebook at a time.
+Welcome to Introduction to Python. Learn to read, run, change, and explain small Python programs, one guided notebook at a time.
 
 **No programming experience needed.** Bring your curiosity. Mistakes are part of learning.
 
