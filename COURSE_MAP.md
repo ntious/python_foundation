@@ -23,6 +23,10 @@ The course includes a getting-started notebook followed by Modules 1-12.
 | 11 | Python Tools and Applications | `notebooks/11_python_tools_and_applications.ipynb` | Light exposure to dictionaries, libraries, and next steps | Recognize additional Python capabilities without a mastery expectation |
 | 12 | Guided Mini Project | `notebooks/12_guided_mini_project.ipynb` | Program workflow, integration, testing, reflection | Build and explain a small complete program |
 
+## Optional Teaching Supports
+
+Before continuing to Module 7, an instructor may replace Module 6's end reflection with the [mid-course check-in](templates/mid_course_reflection.md), retaining its real-world logic question. The [peer exchange or solo equivalent](docs/peer_learning.md) can replace the Comparing AND vs OR practice segment. [Stretch prompts](docs/stretch_prompts.md) are optional after the named lesson; they add no learning objectives or full-credit requirements. See the [instructor guide](INSTRUCTOR_GUIDE.md) for time budgeting and substitution details.
+
 ## CLO Mapping
 
 ### CLO 1: Basic Constructs

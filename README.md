@@ -117,6 +117,14 @@ This repository is designed to be easily adopted and adapted by instructors, sch
 
 ### Customization
 
+Public adoption supports are available without changing the required Python sequence:
+
+- [Base grading guidance](docs/grading_overview.md): sample rubric, partial credit, and an optional re-review policy to adapt.
+- [Mid-course check-in](templates/mid_course_reflection.md): a replacement for Module 6's reflection, not an added assignment.
+- [Optional peer exchange](docs/peer_learning.md): existing practice discussion with an equivalent solo option.
+- [Optional stretch prompts](docs/stretch_prompts.md): deepen familiar concepts without affecting full credit.
+- [Instructor guide](INSTRUCTOR_GUIDE.md): written online walkthroughs, adoption checklist, help, and workload planning. No videos are required.
+
 Instructors are encouraged to:
 
 - modify examples to reflect local or disciplinary context  
@@ -159,7 +167,7 @@ Students should review:
 
 ## Instructor Note
 
-Detailed instructor-facing assessment and support materials are maintained separately and are not part of this public repository.
+Adaptable grading and teaching guidance is included in this public repository. Additional instructor-specific assessment materials may be maintained separately.
 
 Instructors interested in adopting or adapting this course are encouraged to contact the repository maintainer.
 

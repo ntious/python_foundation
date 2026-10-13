@@ -77,3 +77,7 @@ Module 11 is a light look at where Python can go next. The final project stays s
 [Notebook basics](docs/how_to_use_notebooks.md) · [Troubleshooting](setup/troubleshooting.md) · [Using AI responsibly](docs/ai_usage_guidelines.md) · [Project expectations](notebooks/12_guided_mini_project.md)
 
 These open educational resources are available for instructors to reuse and adapt. [Teaching guide](INSTRUCTOR_GUIDE.md) · [Licensing and attribution](OER_LICENSE.md)
+
+[Grading guidance](docs/grading_overview.md) · [Mid-course check-in](templates/mid_course_reflection.md) · [Optional peer learning](docs/peer_learning.md) · [Optional stretch prompts](docs/stretch_prompts.md)
+
+Instructors can adapt these supports to replace existing practice or reflection, not add assignments. Stretch prompts are never required for full credit.

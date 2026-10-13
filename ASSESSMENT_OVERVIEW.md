@@ -61,7 +61,7 @@ The official requirements are listed in [`notebooks/12_guided_mini_project.ipynb
 - arithmetic or simple data processing  
 - clear and meaningful output  
 - one normal-case test and one simple edge-case test
-- a short Fix Log describing an error and how it was fixed
+- a short Fix Log describing an error or unexpected result, or a change/test and what was learned if the program worked as expected
 - a brief reflection written in the student's own words
 
 The goal is to demonstrate **understanding and integration of concepts**, not technical complexity.
@@ -99,6 +99,10 @@ A single mistake should not automatically invalidate an entire submission. For e
 
 ## ✅ Student Expectations
 
+See the [adaptable base grading rubric](docs/grading_overview.md) for sample weights, partial credit, and an optional revision policy. It applies to existing work, not new assignments. Instructors publish the policies they adopt; the sample is not a universal grading or resubmission promise.
+
+The [mid-course check-in](templates/mid_course_reflection.md) may replace Module 6's reflection. The [peer activity](docs/peer_learning.md) has an equivalent solo route and replaces existing practice if selected. [Stretch prompts](docs/stretch_prompts.md) are never required for full credit. None changes the final-project requirements.
+
 Students are expected to:
 
 1. Complete all required notebook sections  
@@ -130,7 +134,7 @@ See:
 
 ## 👩‍🏫 Instructor Note
 
-Detailed instructor-facing assessment and support materials are maintained separately and are not part of this public repository.
+This public repository includes adaptable grading and teaching guidance. Additional instructor-specific assessment materials may be maintained separately. See the [instructor guide](INSTRUCTOR_GUIDE.md) for adoption choices and workload planning.
 
 
 ## 📌 Final Note

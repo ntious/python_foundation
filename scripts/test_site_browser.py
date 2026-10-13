@@ -83,9 +83,35 @@ def check():
                 page.wait_for_url('**/notebooks/00_getting_started/')
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), width
             page.screenshot(path=str(Path(tempfile.gettempdir()) / 'python-foundation-mobile.png'), full_page=True)
+            resources = {
+                'Grading guidance': ('docs/grading_overview/', 'Adaptable Base Rubric'),
+                'Mid-course check-in': ('templates/mid_course_reflection/', 'Mid-course Check-in'),
+                'Optional peer learning': ('docs/peer_learning/', 'Optional Peer Learning: Predict, Compare, Explain'),
+                'Optional stretch prompts': ('docs/stretch_prompts/', 'Optional Stretch Prompts'),
+            }
+            for width in (1280, 320):
+                page.set_viewport_size({'width': width, 'height': 900})
+                for name, (path, heading) in resources.items():
+                    page.goto(base)
+                    if width == 320:
+                        page.locator('.md-header label[for="__drawer"]').click()
+                        page.locator('#__nav_3_label').click()
+                        page.locator('.md-sidebar--primary').get_by_role('link', name=name, exact=True).click()
+                    else:
+                        page.locator('.md-content').get_by_role('link', name=name, exact=True).click()
+                    page.wait_for_url(base + path)
+                    page.locator('.md-content h1, .md-content h2').filter(has_text=heading).first.wait_for(state='visible')
+                    assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), (width, path)
+                    if width == 1280:
+                        page.locator('.md-sidebar--primary').get_by_role('link', name=name, exact=True).wait_for(state='visible')
+            search = page.get_by_role('textbox', name='Search')
+            page.locator('.md-header__button[for="__search"]').click()
+            search.fill('Mid-course')
+            page.locator('.md-search-result__link').first.wait_for(state='visible')
+            assert 'Mid-course' in page.locator('.md-search-result').inner_text()
             assert not errors, errors
             browser.close()
-            print('PASS: hero interaction, light/dark themes, saved lesson progress, desktop/mobile navigation, search, code clipboard, notebook download, 320/390px layout, no JavaScript errors.')
+            print('PASS: teaching-support desktop/mobile navigation and search, hero interaction, light/dark themes, saved lesson progress, code clipboard, notebook download, 320/390px layout, no JavaScript errors.')
     finally:
         server.shutdown()
 

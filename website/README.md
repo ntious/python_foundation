@@ -9,12 +9,15 @@ python -m pip install -r requirements-site.txt
 python scripts/build_site.py
 mkdocs build --strict -f .site-build/mkdocs.yml
 python scripts/check_site.py
+python scripts/test_teaching_support.py
 mkdocs serve -f .site-build/mkdocs.yml
 ```
 
 The generator copies only public course Markdown, notebooks, sample data, licenses, and approved assets. It renders every notebook cell in order without executing Python or publishing stored outputs. It creates navigation from the numbered notebooks. Downloaded notebooks are byte-for-byte copies of the source files.
 
 Edit `website/home.md` for the welcome page and `website/stylesheets/course.css` for appearance. Course objectives, examples, and instructions belong in the existing course files. Website dependencies are separate from Binder requirements.
+
+Grading and optional learning supports live in `docs/` and `templates/`; the generator publishes those same files and lists them under Student guide. Edit the source once, not a second website copy. `test_teaching_support.py` checks the selected peer/walkthrough/stretch examples against original notebook cells and verifies search coverage. It never executes entire notebooks, which contain intentional errors.
 
 GitHub Actions builds and checks links on pull requests. A successful build on `main` publishes to GitHub Pages using the `github-pages` environment. In repository Settings → Pages, the source must be GitHub Actions.
 

@@ -23,6 +23,7 @@ jobs:
           /tmp/site-tools/bin/python scripts/build_site.py
           /tmp/site-tools/bin/mkdocs build --strict -f .site-build/mkdocs.yml
           /tmp/site-tools/bin/python scripts/check_site.py
+          /tmp/site-tools/bin/python scripts/test_teaching_support.py
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         if: github.ref == 'refs/heads/main'
         with:
