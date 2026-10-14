@@ -1,14 +1,16 @@
 cff-version: 1.2.0
-message: "If you adapt or reuse this curriculum, please cite the repository."
-title: "IT1009C · Introduction to Python"
+message: "Please cite this OER when reusing it. Code is MIT; original instructional content is CC BY 4.0, except where noted. See OER_LICENSE.md for component scopes, attribution, and exclusions."
+title: "Introduction to Python: A Guided Beginner Course"
 type: software
 authors:
   - family-names: Nti
     given-names: Isaac Kofi
     orcid: "https://orcid.org/0000-0001-9257-4295"
 repository-code: "https://github.com/ntious/python_foundation"
-url: "https://github.com/ntious/python_foundation"
-license: MIT
+url: "https://ntious.github.io/python_foundation/"
+# A license array would mean alternative licenses for the whole work in CFF 1.2.
+# This project instead has separate component scopes documented in OER_LICENSE.md.
+abstract: "Author-maintained beginner Python notebooks and teaching resources. Code components are licensed under MIT; original instructional prose and educational assets are CC BY 4.0, except where noted. Institutional and third-party rights are not granted by these notices. See https://github.com/ntious/python_foundation/blob/main/OER_LICENSE.md."
 keywords:
   - Python education
   - information technology

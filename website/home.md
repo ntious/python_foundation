@@ -8,7 +8,7 @@ hide:
 
 <div class="hero-copy" markdown>
 
-<span class="course-chip">IT1009C · Introduction to Python</span>
+<span class="course-chip">Introduction to Python: A Guided Beginner Course</span>
 
 # Small steps. Useful code. Growing confidence.
 
@@ -19,7 +19,7 @@ Welcome to Introduction to Python. Learn to read, run, change, and explain small
 [Start your first lesson](notebooks/00_getting_started.md){ .md-button .md-button--primary }
 [Get set up in 5 minutes](QUICKSTART.md){ .md-button }
 
-<p class="course-facts">1 credit <span aria-hidden="true">/</span> About 12 guided hours <span aria-hidden="true">/</span> Learn at your pace</p>
+<p class="course-facts">Beginner-friendly <span aria-hidden="true">/</span> About 12 guided hours <span aria-hidden="true">/</span> Learn at your pace</p>
 
 </div>
 
@@ -81,3 +81,5 @@ These open educational resources are available for instructors to reuse and adap
 [Grading guidance](docs/grading_overview.md) · [Mid-course check-in](templates/mid_course_reflection.md) · [Optional peer learning](docs/peer_learning.md) · [Optional stretch prompts](docs/stretch_prompts.md)
 
 Instructors can adapt these supports to replace existing practice or reflection, not add assignments. Stretch prompts are never required for full credit.
+
+This author-maintained OER is not an official university course or credit-bearing offering. Its [OER learning outcomes](LEARNING_OUTCOMES.md) describe the materials, not institutional catalog requirements. Author affiliation does not imply institutional endorsement. See [licensing and attribution](OER_LICENSE.md) for reuse terms and exclusions.

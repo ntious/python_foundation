@@ -1,6 +1,8 @@
-# IT1009C · Introduction to Python
+# Introduction to Python: A Guided Beginner Course
 
 [Visit the course website](https://ntious.github.io/python_foundation/) for searchable lessons, notebook downloads, and a guided path through the course.
+
+This is an author-maintained open educational resource, not an official university catalog, syllabus, or credit-bearing offering. Its [OER learning outcomes](LEARNING_OUTCOMES.md) describe these materials, not an institution's official course outcomes. Adopting instructors map the resource to their own approved courses and policies. See [licensing and attribution](OER_LICENSE.md) for scope and exclusions.
 
 ## Program Overview
 
@@ -26,7 +28,7 @@ This course introduces the foundational skills needed to begin exploring these a
 
 ## Course Overview
 
-![Visual overview of the IT1009C notebook sequence from Python context through the guided mini project](docs/course_map.png)
+![Visual overview of the OER notebook sequence from Python context through the guided mini project](docs/course_map.png)
 
 ---
 
@@ -173,20 +175,22 @@ Instructors interested in adopting or adapting this course are encouraged to con
 
 ---
 
-## Course Learning Outcomes
+## OER Learning Outcomes
 
-By the end of this course, students will be able to:
-
-1. Apply fundamental Python constructs (variables, data types, control structures) to solve simple problems  
-2. Develop and debug basic Python programs addressing real-world scenarios  
+The [author-written OER learning outcomes](LEARNING_OUTCOMES.md) are the shared reference for this repository and website. The [course map](COURSE_MAP.md) connects them to the existing module objectives. They do not replace any institution's approved catalog outcomes or add final-project requirements.
 
 ---
 
 ## Developed By
 
-**Isaac. K. Nti**  
+**Isaac K. Nti**
+
 Assistant Professor, School of Information Technology, 
 University of Cincinnati
+
+The affiliation above identifies the author only. Institutional references do not imply university publication, sponsorship, endorsement, or official approval of this OER or its adaptations. No university catalog description or official learning outcomes are offered under this repository's licenses. Consult the relevant institution's current catalog for official course information.
+
+For adoption questions or attribution corrections, [open a repository issue](https://github.com/ntious/python_foundation/issues). Do not post student records, credentials, or confidential documents.
 
 ---
 

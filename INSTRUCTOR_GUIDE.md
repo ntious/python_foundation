@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide supports instructors delivering IT1009C · Introduction to Python or adapting these Python foundations materials for beginner learners with no prior programming experience.
+This guide supports instructors delivering Introduction to Python: A Guided Beginner Course or adapting these Python foundations materials for beginner learners with no prior programming experience.
 
 The course is designed to be:
 - beginner-friendly  
@@ -10,6 +10,12 @@ The course is designed to be:
 - guided  
 - practical  
 
+
+## Resource Identity and Adoption
+
+Use the [author-written OER learning outcomes](LEARNING_OUTCOMES.md) and their [module mapping](COURSE_MAP.md) when selecting materials. This resource is not an official university course or catalog. Keep your institution's approved course title, description, outcomes, and local assessment policies in your own syllabus or alignment document, separate from the OER's identity and license grant.
+
+Before redistribution, review [licensing, attribution, and institutional exclusions](OER_LICENSE.md). Confirm permission for any third-party or institutional material you add and mark its terms separately. Preserve creator credit and indicate adaptations; do not imply endorsement by the author or an institution. Neither adoption nor availability establishes credit equivalence or institutional approval.
 
 ## Teaching Philosophy
 

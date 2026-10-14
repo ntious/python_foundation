@@ -31,13 +31,9 @@ This program is designed for flexible deployment:
 - Community STEM workshops  
 - Introductory IT or digital literacy programs  
 
-## Learning Outcomes
-By the end of the program, students will be able to:
-- describe programming as step-by-step instructions for a computer  
-- run and modify simple Python programs  
-- use variables, input, and basic logic to solve simple problems  
-- identify and fix basic errors in code  
-- explain how programming applies to their field or daily life  
+## OER Learning Outcomes
+
+Use the [author-written OER learning outcomes](LEARNING_OUTCOMES.md) as the shared program-level reference. The [course map](COURSE_MAP.md) aligns those outcomes with the existing module objectives. Institutional catalog outcomes and credit requirements remain separate and must be supplied by each adopting institution.
 
 
 ## Why Python?

@@ -33,8 +33,8 @@ def check():
             errors = []
             page.on('pageerror', lambda error: errors.append(str(error)))
             page.goto(base)
-            assert page.title() == 'IT1009C · Introduction to Python'
-            assert page.locator('.course-chip').inner_text() == 'IT1009C · Introduction to Python'
+            assert page.title() == 'Introduction to Python: A Guided Beginner Course'
+            assert page.locator('.course-chip').inner_text() == 'Introduction to Python: A Guided Beginner Course'
             logo = page.locator('.md-header .md-logo img')
             assert logo.get_attribute('src').endswith('images/logo.svg')
             assert logo.evaluate('(img) => img.complete && img.naturalWidth > 0')
@@ -84,6 +84,7 @@ def check():
                 assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), width
             page.screenshot(path=str(Path(tempfile.gettempdir()) / 'python-foundation-mobile.png'), full_page=True)
             resources = {
+                'OER learning outcomes': ('LEARNING_OUTCOMES/', 'OER Learning Outcomes'),
                 'Grading guidance': ('docs/grading_overview/', 'Adaptable Base Rubric'),
                 'Mid-course check-in': ('templates/mid_course_reflection/', 'Mid-course Check-in'),
                 'Optional peer learning': ('docs/peer_learning/', 'Optional Peer Learning: Predict, Compare, Explain'),
@@ -106,8 +107,9 @@ def check():
                         page.locator('.md-sidebar--primary').get_by_role('link', name=name, exact=True).wait_for(state='visible')
             search = page.get_by_role('textbox', name='Search')
             page.locator('.md-header__button[for="__search"]').click()
+            page.wait_for_function('!document.querySelector(".md-search__input").disabled')
             search.fill('Mid-course')
-            page.locator('.md-search-result__link').first.wait_for(state='visible')
+            page.locator('.md-search-result__link').first.wait_for(state='visible', timeout=30000)
             assert 'Mid-course' in page.locator('.md-search-result').inner_text()
             assert not errors, errors
             browser.close()

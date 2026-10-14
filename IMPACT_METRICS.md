@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This document defines how the effectiveness of IT1009C · Introduction to Python and its reusable Python foundations materials is measured.
+This document defines how the effectiveness of Introduction to Python: A Guided Beginner Course and its reusable Python foundations materials is measured.
 
 The goal is to evaluate:
 - student learning

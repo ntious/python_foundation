@@ -1,8 +1,8 @@
 # Course Overview
 
-## IT1009C · Introduction to Python
+## Introduction to Python: A Guided Beginner Course
 
-Welcome to IT1009C. This course introduces Python through short, guided practice activities that focus on useful, real-world information technology tasks.
+Welcome to this guided Python course. This course introduces Python through short, guided practice activities that focus on useful, real-world information technology tasks.
 
 No prior programming experience is required. The course is designed for beginners, including students from non-computing disciplines who want a practical first experience with Python.
 

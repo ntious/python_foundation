@@ -1,5 +1,5 @@
 # Course Map
-![Visual overview of the IT1009C notebook sequence from Python context through the guided mini project](docs/course_map.png)
+![Visual overview of the OER notebook sequence from Python context through the guided mini project](docs/course_map.png)
 
 This map shows how the notebooks fit together. It is useful for instructors, students who want a big-picture view, and anyone reviewing the course structure.
 
@@ -27,35 +27,19 @@ The course includes a getting-started notebook followed by Modules 1-12.
 
 Before continuing to Module 7, an instructor may replace Module 6's end reflection with the [mid-course check-in](templates/mid_course_reflection.md), retaining its real-world logic question. The [peer exchange or solo equivalent](docs/peer_learning.md) can replace the Comparing AND vs OR practice segment. [Stretch prompts](docs/stretch_prompts.md) are optional after the named lesson; they add no learning objectives or full-credit requirements. See the [instructor guide](INSTRUCTOR_GUIDE.md) for time budgeting and substitution details.
 
-## CLO Mapping
+## OER Outcome Mapping
 
-### CLO 1: Basic Constructs
+The [author-written OER learning outcomes](LEARNING_OUTCOMES.md) are the shared reference. This map describes the materials, not alignment certified by a university. Module objectives are unchanged.
 
-Students write and run simple Python programs using core beginner constructs.
+| OER outcome | Supporting modules | Existing evidence of learning |
+| --- | --- | --- |
+| 1. Read and predict | 0–10 | Predict-before-running prompts, output explanations, and tracing examples |
+| 2. Build small programs | 2–8, 12 | Guided changes, mini labs, and the small project |
+| 3. Organize repeated tasks | 9 | Define and call a simple function with a parameter |
+| 4. Test and explain changes | 2–10, 12 | Intentional-error practice, testing, and the project Fix Log |
+| 5. Apply and reflect | 1, 4–10, 12 | Real-world connections, reflections, and project explanation |
 
-Strongly supported by:
-
-- Module 2: variables and output
-- Module 3: input and type conversion
-- Module 4: arithmetic and comparison
-- Module 5: conditionals
-- Module 7: loops
-- Module 8: lists
-- Module 9: functions
-- Module 12: mini project integration
-
-### CLO 2: Problem Solving and Debugging
-
-Students use Python to solve small practical problems, test their work, and debug common issues.
-
-Strongly supported by:
-
-- Module 1: real-world Python context
-- Module 5: decision-making rules
-- Module 6: multi-condition logic
-- Module 8: data-style list practice
-- Module 10: debugging and validation
-- Module 12: guided mini project
+Module 11 offers light exposure rather than additional mastery requirements. Functions are practiced in Module 9; this map does not add a function requirement to the final project. Adopters supply their own institutional alignment separately.
 
 ## Progression Summary
 

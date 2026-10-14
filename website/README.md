@@ -10,6 +10,7 @@ python scripts/build_site.py
 mkdocs build --strict -f .site-build/mkdocs.yml
 python scripts/check_site.py
 python scripts/test_teaching_support.py
+python scripts/test_oer_identity.py
 mkdocs serve -f .site-build/mkdocs.yml
 ```
 
