@@ -4,10 +4,41 @@ import http.server
 import threading
 import tempfile
 from pathlib import Path
+from urllib.parse import quote
 
 from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def check_search_safety(page, base):
+    """Exercise URL queries through the real search worker and suggestion DOM."""
+    for query in (
+        'pyth',
+        '-<b>probe</b> pyth',
+        '-<img/src=x/onerror=window.__searchProbe=1> pyth',
+        '-&lt;b&gt;probe&lt;/b&gt; pyth',
+    ):
+        print('Checking suggestion:', query, flush=True)
+        page.goto(base + '?q=' + quote(query, safe=''))
+        search = page.get_by_role('textbox', name='Search')
+        page.wait_for_function('!document.querySelector(".md-search__input").disabled')
+        search.focus()
+        search.press('End')
+        search.press('Backspace')
+        search.press('h')
+        # A nonempty suggestion proves the vulnerable renderer was reached.
+        page.wait_for_function('document.querySelector("[data-md-component=search-suggest]").textContent.length > 0', timeout=30000)
+        suggestion = page.locator('[data-md-component="search-suggest"]')
+        text = suggestion.text_content()
+        assert text.startswith(query[:-4]), (query, text)
+        assert suggestion.locator('*').count() == 0, query
+        assert page.evaluate('window.__searchProbe') is None, query
+        if query == 'pyth':
+            assert text.startswith('python'), text
+            search.press('ArrowRight')
+            assert search.input_value() == text
+    print('PASS: search suggestions render URL input as text, including markup and encoded entities; normal completion works.')
 
 
 class Handler(http.server.SimpleHTTPRequestHandler):
@@ -32,6 +63,7 @@ def check():
             page.set_default_timeout(10000)
             errors = []
             page.on('pageerror', lambda error: errors.append(str(error)))
+            check_search_safety(page, base)
             page.goto(base)
             assert page.title() == 'Introduction to Python: A Guided Beginner Course'
             assert page.locator('.course-chip').inner_text() == 'Introduction to Python: A Guided Beginner Course'
