@@ -153,3 +153,20 @@
   .cell-predict, .cell-run { margin-left: .9rem; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
+
+/* Optional Python explorer: learner-paced, with text equivalents for all state. */
+.python-visualizer { border: 2px solid var(--pf-cobalt); border-radius: .6rem; padding: 1rem; margin: 1.2rem 0; background: var(--pf-surface); min-width: 0; }
+.python-visualizer label { display: block; font-weight: 700; margin-bottom: .4rem; }
+.python-visualizer textarea { display: block; width: 100%; box-sizing: border-box; resize: vertical; padding: .6rem; font: .75rem/1.6 var(--md-code-font-family); background: var(--md-code-bg-color); color: var(--md-code-fg-color); border: 1px solid var(--pf-line); border-radius: .3rem; white-space: pre; }
+.python-visualizer textarea:focus-visible { outline: 3px solid var(--pf-cobalt); outline-offset: 2px; }
+.trace-controls { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .7rem; }
+.trace-controls button { font: inherit; padding: .5rem .65rem; border: 1px solid var(--pf-cobalt); border-radius: .3rem; color: var(--pf-ink); background: var(--pf-surface); cursor: pointer; min-height: 44px; }
+.trace-controls button:first-child { background: var(--pf-cobalt); color: white; }
+.trace-controls button:disabled { opacity: .5; cursor: default; }
+.trace-status { font-weight: 600; overflow-wrap: anywhere; }
+.trace-view { min-width: 0; }
+.trace-view pre { overflow: auto; padding: .6rem; max-height: 22rem; font-size: .75rem; background: var(--md-code-bg-color); color: var(--md-code-fg-color); }
+.trace-view pre span { display: block; min-width: max-content; }
+.trace-current { background: var(--pf-yellow); color: #10183a; font-weight: bold; border-left: 4px solid #3355ff; }
+.trace-view td { overflow-wrap: anywhere; max-width: 15rem; }
+.trace-error { white-space: pre-wrap; overflow-wrap: anywhere; }

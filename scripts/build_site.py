@@ -1,5 +1,6 @@
 """Generate a reading website from canonical course files. Never execute notebooks."""
 import json
+import html
 import re
 import shutil
 from pathlib import Path
@@ -21,6 +22,22 @@ def notebook_markdown(path):
             # Choose a fence longer than any backtick sequence in the cell.
             fence = '`' * max(3, max((len(s) + 1 for s in re.findall(r'`+', source)), default=3))
             chunks.append(f'{fence}python\n{source}\n{fence}')
+            if path.name == '07_loops.ipynb' and source.startswith('# Watch the loop steps appear one at a time'):
+                chunks.append(
+                    '<section class="python-visualizer" aria-label="Interactive loop explorer">\n'
+                    '<h3>Explore this loop, one step at a time</h3>\n'
+                    '<p>Optional: predict the output, then change <code>range(3)</code>, the message, '
+                    'or <code>step + 1</code>. Run your version and follow its steps. '
+                    'Python loads on your first run (an internet connection is needed). '
+                    'Edits stay on this page until you leave or reload it.</p>\n'
+                    '<label for="loop-code">Your Python code</label>\n'
+                    f'<textarea id="loop-code" spellcheck="false" rows="8">{html.escape(source)}</textarea>\n'
+                    '<div class="trace-controls"></div>\n'
+                    '<p class="trace-status" role="status" aria-live="polite">Ready. What will this print?</p>\n'
+                    '<div class="trace-view" hidden></div>\n'
+                    '<noscript>Enable JavaScript to use the optional explorer, or run the original example in Binder or Colab.</noscript>\n'
+                    '</section>'
+                )
         else:
             chunks.append(source)
     actions = (

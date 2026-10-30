@@ -167,6 +167,25 @@ The goal is awareness, not specialization.
 - Allow students to work in pairs when possible  
 - Keep activities short and focused  
 
+### Optional loop explorer on the website
+
+Lesson 07 includes an optional editable explorer beside the “Loop step” example.
+Ask students to predict the output, change one value, and use **Run and visualize**,
+then **Next step** to explain the result. The highlighted line runs **next**;
+the variables and output show the state before that line executes. The final
+step shows the completed state or Python error. No extra submission is needed.
+
+The website runs Python locally in a browser worker using Pyodide 314.0.7,
+downloaded from jsDelivr on demand. The first run needs an internet connection;
+edits are not saved. This small explorer limits execution to 500 recorded lines
+and five seconds after Python loads. Use Binder or Colab for input prompts,
+larger programs, or if the runtime is blocked by a school network. The original
+notebook remains usable independently. The site build takes the explorer's
+starting code directly from its notebook cell; it does not execute the notebook.
+
+For maintainers, build the website normally, then run
+`python scripts/test_visualizer.py` with Playwright and Chromium installed to
+check edited code, trace state, errors, stopping, and mobile keyboard controls.
 
 ## Final Project Guidance
 

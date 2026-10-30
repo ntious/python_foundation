@@ -43,6 +43,7 @@ extra_css:
   - stylesheets/course.css
 extra_javascript:
   - javascripts/course.js
+  - javascripts/visualizer.js
 extra:
   generator: false
 copyright: Code · MIT. Educational content · CC BY 4.0. I. K. Nti.
