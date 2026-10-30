@@ -72,6 +72,16 @@ Start at 00 and work through the lessons in order. The early lessons build confi
 
 Module 11 is a light look at where Python can go next. The final project stays small and uses the core skills you have practiced. [Read the course map](COURSE_MAP.md) for the full progression and learning outcomes.
 
+## See Python run, one step at a time
+
+Try these optional explorers when you reach the matching lesson. Edit the Python, predict what will happen, then use **Run and visualize** and **Next step** to follow the code, variable values, and output.
+
+- **[Decisions: follow the warning](notebooks/05_decision_making.md#decision-explorer)** — Change disk usage or the threshold and see which lines run.
+- **[Loops: watch each repetition](notebooks/07_loops.md#loop-explorer)** — Change the number of repeats or the message and follow the loop variable.
+- **[Lists: build a total and average](notebooks/08_lists_as_data.md#list-explorer)** — Change the readings and watch the running total grow before the average is calculated.
+
+No account is needed. Python loads when you first run an explorer, so an internet connection is needed and the first run may take a moment. These are optional practice, with no extra submission.
+
 ## Help is part of learning
 
 [Notebook basics](docs/how_to_use_notebooks.md) · [Troubleshooting](setup/troubleshooting.md) · [Using AI responsibly](docs/ai_usage_guidelines.md) · [Project expectations](notebooks/12_guided_mini_project.md)
