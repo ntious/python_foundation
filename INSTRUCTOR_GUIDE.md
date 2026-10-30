@@ -167,13 +167,19 @@ The goal is awareness, not specialization.
 - Allow students to work in pairs when possible  
 - Keep activities short and focused  
 
-### Optional loop explorer on the website
+### Optional execution explorers on the website
 
-Lesson 07 includes an optional editable explorer beside the “Loop step” example.
+Lessons 05, 07, and 08 include optional editable explorers for the disk-warning
+decision, numbered loop, and system-readings running total and average.
 Ask students to predict the output, change one value, and use **Run and visualize**,
 then **Next step** to explain the result. The highlighted line runs **next**;
 the variables and output show the state before that line executes. The final
 step shows the completed state or Python error. No extra submission is needed.
+
+For decisions, compare a value below, at, and above the threshold, and ask why
+the warning line runs or is skipped. For lists, ask students to track the current
+reading and running total before calculating the average. Changing the list to
+empty is an optional debugging discussion, not an additional required task.
 
 The website runs Python locally in a browser worker using Pyodide 314.0.7,
 downloaded from jsDelivr on demand. The first run needs an internet connection;

@@ -11,6 +11,43 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / '.site-build/source'
 REPO = 'https://github.com/ntious/python_foundation'
 
+EXPLORERS = {
+    '05_decision_making.ipynb': (
+        '# Single condition example: disk usage warning', 'decision',
+        'Explore this decision, one step at a time',
+        'Predict whether the warning will print. Try disk_usage values of 70, 80, and 95. '
+        'Which line runs after the condition? Does “Disk check complete” still print? '
+        'You can also change the threshold or messages.'),
+    '07_loops.ipynb': (
+        '# Watch the loop steps appear one at a time', 'loop',
+        'Explore this loop, one step at a time',
+        'Predict the output, then change range(3), the message, or step + 1. '
+        'Run your version and follow its steps.'),
+    '08_lists_as_data.ipynb': (
+        '# Mini Lab: system readings', 'list',
+        'Explore the running total and average',
+        'Predict the total, then change or add list values. Follow reading and total '
+        'as the loop repeats, then watch average appear. An empty list produces an error '
+        'when dividing by its length: try it and explain why.'),
+}
+
+
+def explorer_markup(source, key, title, prompt):
+    return (
+        f'<section id="{key}-explorer" class="python-visualizer" aria-label="Interactive {key} explorer">\n'
+        f'<h3>{html.escape(title)}</h3>\n'
+        f'<p>Optional: {html.escape(prompt)} '
+        'Python loads on your first run (an internet connection is needed). '
+        'Edits stay on this page until you leave or reload it.</p>\n'
+        f'<label for="{key}-code">Your Python code</label>\n'
+        f'<textarea id="{key}-code" spellcheck="false" rows="8">{html.escape(source)}</textarea>\n'
+        '<div class="trace-controls"></div>\n'
+        '<p class="trace-status" role="status" aria-live="polite">Ready. What will this print?</p>\n'
+        '<div class="trace-view" hidden></div>\n'
+        '<noscript>Enable JavaScript to use the optional explorer, or run the original example in Binder or Colab.</noscript>\n'
+        '</section>'
+    )
+
 
 def notebook_markdown(path):
     notebook = json.loads(path.read_text(encoding='utf-8'))
@@ -22,22 +59,9 @@ def notebook_markdown(path):
             # Choose a fence longer than any backtick sequence in the cell.
             fence = '`' * max(3, max((len(s) + 1 for s in re.findall(r'`+', source)), default=3))
             chunks.append(f'{fence}python\n{source}\n{fence}')
-            if path.name == '07_loops.ipynb' and source.startswith('# Watch the loop steps appear one at a time'):
-                chunks.append(
-                    '<section class="python-visualizer" aria-label="Interactive loop explorer">\n'
-                    '<h3>Explore this loop, one step at a time</h3>\n'
-                    '<p>Optional: predict the output, then change <code>range(3)</code>, the message, '
-                    'or <code>step + 1</code>. Run your version and follow its steps. '
-                    'Python loads on your first run (an internet connection is needed). '
-                    'Edits stay on this page until you leave or reload it.</p>\n'
-                    '<label for="loop-code">Your Python code</label>\n'
-                    f'<textarea id="loop-code" spellcheck="false" rows="8">{html.escape(source)}</textarea>\n'
-                    '<div class="trace-controls"></div>\n'
-                    '<p class="trace-status" role="status" aria-live="polite">Ready. What will this print?</p>\n'
-                    '<div class="trace-view" hidden></div>\n'
-                    '<noscript>Enable JavaScript to use the optional explorer, or run the original example in Binder or Colab.</noscript>\n'
-                    '</section>'
-                )
+            spec = EXPLORERS.get(path.name)
+            if spec and source.startswith(spec[0]):
+                chunks.append(explorer_markup(source, *spec[1:]))
         else:
             chunks.append(source)
     actions = (

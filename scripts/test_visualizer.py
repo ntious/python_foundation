@@ -100,6 +100,67 @@ def check():
             root.get_by_role('button', name='Run and visualize', exact=True).click()
             page.wait_for_function('document.querySelector(".trace-status").textContent.includes("could not load")')
             assert root.get_by_role('button', name='Run and visualize', exact=True).is_enabled()
+            # Fresh page has no failed-download route from the previous check.
+            page = browser.new_page()
+            page.set_default_timeout(90000)
+            base = f'http://127.0.0.1:{server.server_port}/python_foundation/notebooks/'
+            for filename, marker in (
+                ('05_decision_making', '# Single condition example: disk usage warning'),
+                ('08_lists_as_data', '# Mini Lab: system readings'),
+            ):
+                page.goto(base + filename + '/')
+                root = page.locator('.python-visualizer')
+                assert root.count() == 1
+                editor = root.get_by_label('Your Python code')
+                status = root.locator('.trace-status')
+                original = editor.input_value()
+                cells = json.loads((ROOT / 'notebooks' / (filename + '.ipynb')).read_text())['cells']
+                assert original == next(''.join(c['source']) for c in cells if ''.join(c['source']).startswith(marker))
+                if filename.startswith('05'):
+                    for value in (70, 80, 85, 95):
+                        run(original.replace('disk_usage = 85', f'disk_usage = {value}'))
+                        executed = []
+                        while root.get_by_role('button', name='Next step', exact=True).is_enabled():
+                            executed.append(root.locator('.trace-current').inner_text())
+                            root.get_by_role('button', name='Next step', exact=True).click()
+                        output = root.locator('.trace-view > pre').nth(1).inner_text()
+                        assert ('Warning: disk usage is high' in output) == (value > 80)
+                        assert any('print("Warning:' in line for line in executed) == (value > 80)
+                        assert 'Disk check complete' in output
+                    run(original.replace('> 80', '> 99'))
+                    finish()
+                    assert 'Warning:' not in root.locator('.trace-view > pre').nth(1).inner_text()
+                else:
+                    run()
+                    totals = []
+                    while root.get_by_role('button', name='Next step', exact=True).is_enabled():
+                        for row in root.locator('tbody tr').all():
+                            if row.locator('td').first.inner_text() == 'total':
+                                totals.append(row.locator('td').nth(1).inner_text())
+                        root.get_by_role('button', name='Next step', exact=True).click()
+                    assert {'0', '71', '147', '230', '309'}.issubset(totals), totals
+                    assert 'Average: 77.25' in root.locator('.trace-view > pre').nth(1).inner_text()
+                    for values, expected in (('[10, 20, 30]', 'Average: 20.0'), ('[42]', 'Average: 42.0'), ('[-5, 0, 5, 10, 15]', 'Average: 5.0')):
+                        run(original.replace('[71, 76, 83, 79]', values))
+                        finish()
+                        assert expected in root.locator('.trace-view > pre').nth(1).inner_text()
+                    run(original.replace('total + reading', 'total + reading * 2'))
+                    finish()
+                    assert 'Total: 618' in root.locator('.trace-view > pre').nth(1).inner_text()
+                    run(original.replace('[71, 76, 83, 79]', '[]'))
+                    finish()
+                    assert 'ZeroDivisionError' in status.inner_text()
+                root.get_by_role('button', name='Restore example', exact=True).click()
+                assert editor.input_value() == original
+                page.set_viewport_size({'width': 320, 'height': 844})
+                run()
+                root.get_by_role('button', name='Next step', exact=True).focus()
+                page.keyboard.press('Enter')
+                assert 'Step 2 of' in status.inner_text()
+                assert page.evaluate('document.documentElement.scrollWidth <= innerWidth'), filename
+                root.screenshot(path=f'/tmp/python-{filename}-explorer.png')
+                page.set_viewport_size({'width': 1280, 'height': 900})
+            print('PASS: decision boundaries and edited threshold; list snapshots, edited values/calculation, empty list error; both mobile explorers.')
             print('PASS: real Python edits, step state, output, zero iterations, errors, text safety, stop/timeout, mobile layout and keyboard controls.')
             browser.close()
     finally:
