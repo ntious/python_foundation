@@ -2,11 +2,9 @@
 
 This is a maintainer review, not an additional student assignment. The approximately 12 guided hours remain estimates; effectiveness and independent workload need learner evidence.
 
-## Current state and benchmark
+## Current state
 
 The OER already has a numbered beginner sequence, Binder/Colab support, assessment guidance, online-teaching and adoption notes, website checks, and editable execution explorers. Version 1.0.0 is already archived on Zenodo.
-
-[Berkeley D-Lab Python Fundamentals](https://github.com/dlab-berkeley/Python-Fundamentals) is a useful organizational benchmark: separate lessons/solutions, setup instructions, glossary, and a project. Its six-part workshop includes Pandas and data-science analysis/visualization. This OER serves a different IT/CIS and non-CS programming-literacy purpose. Repository stars and forks do not establish student learning or institutional adoption.
 
 ## Risks and priorities
 
@@ -52,4 +50,4 @@ Site preservation checks passed for the generated pages and all 16 original note
 
 ## Changes deliberately avoided
 
-Do not add Pandas or advanced topics to match the benchmark; increase required assessment; move stable notebook URLs; publish private answer keys; treat the textbook as a prerequisite; change archived release tags; claim measured impact from repository traffic; or advertise instant execution, guaranteed Binder availability, or full WCAG compliance.
+Do not expand the beginner curriculum with advanced topics; increase required assessment; move stable notebook URLs; publish private answer keys; treat the textbook as a prerequisite; change archived release tags; claim measured impact from repository traffic; or advertise instant execution, guaranteed Binder availability, or full WCAG compliance.
