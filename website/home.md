@@ -88,6 +88,8 @@ No account is needed. Python loads when you first run an explorer, so an interne
 
 These open educational resources are available for instructors to reuse and adapt. [Teaching guide](INSTRUCTOR_GUIDE.md) · [Licensing and attribution](OER_LICENSE.md)
 
+[Cite this OER on Zenodo](https://doi.org/10.5281/zenodo.24046034) · [Archived version 1.0.0](https://doi.org/10.5281/zenodo.24046035). The archive includes the learning resources and textbook companion files; it is not a separate publication of the textbook.
+
 [Grading guidance](docs/grading_overview.md) · [Mid-course check-in](templates/mid_course_reflection.md) · [Optional peer learning](docs/peer_learning.md) · [Optional stretch prompts](docs/stretch_prompts.md)
 
 Instructors can adapt these supports to replace existing practice or reflection, not add assignments. Stretch prompts are never required for full credit.

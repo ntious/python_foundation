@@ -1,5 +1,9 @@
 # Introduction to Python: A Guided Beginner Course
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24046034.svg)](https://doi.org/10.5281/zenodo.24046034)
+
+To cite the archived **v1.0.0** release: Nti, I. K. *Introduction to Python: A Guided Beginner Course* (Version 1.0.0). Zenodo. [https://doi.org/10.5281/zenodo.24046035](https://doi.org/10.5281/zenodo.24046035). The badge links to the record for all versions; the version DOI identifies this specific release. This archive includes the OER and textbook companion files, not a separate publication of the textbook.
+
 [Visit the course website](https://ntious.github.io/python_foundation/) for searchable lessons, notebook downloads, and a guided path through the course.
 
 This is an author-maintained open educational resource, not an official university catalog, syllabus, or credit-bearing offering. Its [OER learning outcomes](LEARNING_OUTCOMES.md) describe these materials, not an institution's official course outcomes. Adopting instructors map the resource to their own approved courses and policies. See [licensing and attribution](OER_LICENSE.md) for scope and exclusions.
