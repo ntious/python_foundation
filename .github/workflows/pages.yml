@@ -10,10 +10,12 @@ concurrency:
   group: pages-${{ github.ref }}
   cancel-in-progress: true
 jobs:
+  notebooks:
+    uses: ./.github/workflows/notebooks.yml
   build:
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Install website tools
         run: |
           python3 -m venv /tmp/site-tools
@@ -25,13 +27,20 @@ jobs:
           /tmp/site-tools/bin/python scripts/check_site.py
           /tmp/site-tools/bin/python scripts/test_teaching_support.py
           /tmp/site-tools/bin/python scripts/test_oer_identity.py
+          /tmp/site-tools/bin/python scripts/check_accessibility.py
+      - name: Check browser navigation and accessibility
+        run: |
+          /tmp/site-tools/bin/pip install -r requirements-test.txt
+          /tmp/site-tools/bin/playwright install --with-deps chromium
+          /tmp/site-tools/bin/python scripts/test_site_browser.py
+          /tmp/site-tools/bin/python scripts/test_accessibility_browser.py
       - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa # v3
         if: github.ref == 'refs/heads/main'
         with:
           path: .site-build/output
   deploy:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    needs: build
+    needs: [build, notebooks]
     runs-on: ubuntu-24.04
     permissions:
       pages: write

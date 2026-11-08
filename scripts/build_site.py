@@ -58,7 +58,10 @@ def notebook_markdown(path):
         if cell['cell_type'] == 'code':
             # Choose a fence longer than any backtick sequence in the cell.
             fence = '`' * max(3, max((len(s) + 1 for s in re.findall(r'`+', source)), default=3))
-            chunks.append(f'{fence}python\n{source}\n{fence}')
+            code = f'{fence}python\n{source}\n{fence}'
+            if re.search(r'^# TODO: Reorder', source, re.MULTILINE):
+                code = '<details markdown="1" class="worked-example">\n<summary>Reveal worked arrangement — try your order first</summary>\n\n' + code + '\n\n</details>'
+            chunks.append(code)
             spec = EXPLORERS.get(path.name)
             if spec and source.startswith(spec[0]):
                 chunks.append(explorer_markup(source, *spec[1:]))
@@ -85,6 +88,8 @@ def rewrite_links(text):
         if '://' in target:
             return match.group(0)
         target = target.replace('.ipynb', '.md')
+        if target.startswith('website/images/'):
+            target = target.removeprefix('website/')
         if target == 'setup/':
             target = 'setup/index.md'
         return '](' + target + ')'
@@ -96,6 +101,7 @@ def build():
         shutil.rmtree(SOURCE)  # Only our generated source directory.
     SOURCE.mkdir(parents=True)
     paths = list(ROOT.glob('*.md'))
+    paths.append(ROOT / 'website/README.md')
     for folder in ('docs', 'setup', 'templates', 'data'):
         paths.extend((ROOT / folder).glob('*.md'))
     for path in paths:
@@ -142,6 +148,13 @@ def build():
         {'Setup & help': [{'Environments': 'setup/index.md'}, {'Binder': 'setup/binder_instructions.md'}, {'Colab': 'setup/colab_instructions.md'}, {'Replit (optional)': 'setup/replit_instructions.md'}, {'Troubleshooting': 'setup/troubleshooting.md'}]},
         {'For instructors': [{'Teaching guide': 'INSTRUCTOR_GUIDE.md'}, {'Program overview': 'PROGRAM_OVERVIEW.md'}, {'Impact metrics': 'IMPACT_METRICS.md'}, {'Repository overview': 'repository.md'}, {'Reuse and licensing': 'OER_LICENSE.md'}]},
     ]
+    for group in config['nav']:
+        if 'Student guide' in group:
+            group['Student guide'].extend([{'Beginner glossary': 'docs/glossary.md'}, {'Accessibility and access': 'docs/accessibility.md'}])
+        if 'Setup & help' in group:
+            group['Setup & help'].insert(3, {'Local installation': 'setup/local_instructions.md'})
+        if 'For instructors' in group:
+            group['For instructors'].extend([{'Maintenance review': 'docs/maintenance_review.md'}, {'Release policy': 'RELEASING.md'}])
     # Absolute paths keep the generated config independent of its own location.
     config['docs_dir'] = str(SOURCE)
     config['site_dir'] = str(ROOT / '.site-build/output')

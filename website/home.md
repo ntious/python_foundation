@@ -19,6 +19,8 @@ Welcome to Introduction to Python. Learn to read, run, change, and explain small
 [Start your first lesson](notebooks/00_getting_started.md){ .md-button .md-button--primary }
 [Get set up in 5 minutes](QUICKSTART.md){ .md-button }
 
+[For instructors: adopt or adapt](INSTRUCTOR_GUIDE.md#resource-identity-and-adoption) · [Install locally](setup/local_instructions.md)
+
 <p class="course-facts">Beginner-friendly <span aria-hidden="true">/</span> About 12 guided hours <span aria-hidden="true">/</span> Learn at your pace</p>
 
 </div>
@@ -60,6 +62,8 @@ Welcome to Introduction to Python. Learn to read, run, change, and explain small
 
 Start at 00 and work through the lessons in order. The early lessons build confidence with values and decisions; later lessons bring those ideas together in a small, guided project.
 
+On each lesson page, choose **Mark this lesson as done** to track your progress here. Progress is saved only in this browser, is removed when browser data is cleared, and is not a grade.
+
 <div class="path-progress" data-progress hidden></div>
 
 <div class="lesson-path" markdown>
@@ -91,6 +95,8 @@ No account is needed. Python loads when you first run an explorer, so an interne
 ## Help is part of learning
 
 [Notebook basics](docs/how_to_use_notebooks.md) · [Troubleshooting](setup/troubleshooting.md) · [Using AI responsibly](docs/ai_usage_guidelines.md) · [Project expectations](notebooks/12_guided_mini_project.md)
+
+[Beginner glossary](docs/glossary.md) · [Accessibility and access options](docs/accessibility.md)
 
 These open educational resources are available for instructors to reuse and adapt. [Teaching guide](INSTRUCTOR_GUIDE.md) · [Licensing and attribution](OER_LICENSE.md)
 

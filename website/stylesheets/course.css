@@ -137,7 +137,7 @@
 .md-footer { background: var(--pf-ink); }
 [data-md-color-scheme="slate"] .md-footer { background: #0a0f24; }
 .md-footer-meta { background: #0a0f24; }
-.md-typeset a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--pf-yellow); outline-offset: 3px; }
+.md-typeset a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible, pre:focus-visible { outline: 3px solid var(--md-typeset-a-color); outline-offset: 3px; }
 ::selection { background: var(--pf-yellow); color: #10183a; }
 
 @media (max-width: 960px) {

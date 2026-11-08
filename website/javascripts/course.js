@@ -110,7 +110,14 @@
     meter.hidden = false;
   }
 
-  function init() { setupCell(); setupLessonPage(); setupPath(); }
+  function setupCodeScrolling() {
+    document.querySelectorAll('.md-content pre').forEach(function (pre) {
+      pre.tabIndex = 0;
+      pre.setAttribute('aria-label', 'Code or output; use arrow keys to scroll');
+    });
+  }
+
+  function init() { setupCell(); setupLessonPage(); setupPath(); setupCodeScrolling(); }
   if (window.document$ && window.document$.subscribe) window.document$.subscribe(init);
   else if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();

@@ -1,5 +1,26 @@
 # Introduction to Python: A Guided Beginner Course
 
+Beginner Python for IT/CIS and non-CS learners: about 12 guided hours, small programs, and a predict–run–explain approach. No programming experience is required.
+
+## Start here
+
+| Your goal | Where to go |
+|---|---|
+| I'm a student | [Quickstart](QUICKSTART.md) → [first notebook](notebooks/00_getting_started.ipynb) |
+| Read lessons and try the explorers | [Course website](https://ntious.github.io/python_foundation/) |
+| Launch online | [Binder](https://mybinder.org/v2/gh/ntious/python_foundation/HEAD?urlpath=lab/tree/notebooks/00_getting_started.ipynb) or [Colab instructions](setup/colab_instructions.md) |
+| Install locally | [Windows, macOS, and Linux instructions](setup/local_instructions.md) |
+| I'm an instructor / want to adapt modules | [Adoption checklist and teaching guide](INSTRUCTOR_GUIDE.md#resource-identity-and-adoption) |
+| Look up a term | [Beginner glossary](docs/glossary.md) |
+
+Binder may take a few minutes to start. Download your work before leaving a temporary session. On lesson pages, use **Mark this lesson as done** to track progress in this browser; clearing browser data removes that progress.
+
+![The loop explorer highlights the next Python line and displays the loop variable and output; students control each step.](website/images/loop-explorer.png)
+
+The optional explorers run edited Python on demand. The [accessibility and access guide](docs/accessibility.md) describes keyboard controls, text alternatives, and fallbacks.
+
+## Citation
+
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24046034.svg)](https://doi.org/10.5281/zenodo.24046034)
 
 To cite the archived **v1.0.0** release: Nti, I. K. *Introduction to Python: A Guided Beginner Course* (Version 1.0.0). Zenodo. [https://doi.org/10.5281/zenodo.24046035](https://doi.org/10.5281/zenodo.24046035). The badge links to the record for all versions; the version DOI identifies this specific release. This archive includes the OER and textbook companion files, not a separate publication of the textbook.
@@ -46,7 +67,7 @@ This course introduces the foundational skills needed to begin exploring these a
 
 [![Launch Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ntious/python_foundation/HEAD?urlpath=lab/tree/notebooks/00_getting_started.ipynb)
 
-Click the button above to start the course instantly in your browser. No Python installation is required.
+Click the button above to launch the course in your browser. No Python installation is required.
 
 The first Binder launch may take a few minutes while the course environment loads. This is normal. If Binder is slow or does not load, see the setup options in [`setup/`](setup/).
 
@@ -157,13 +178,15 @@ Instructors are encouraged to:
 | `notebooks/` | Guided course notebooks for each module |
 | `templates/` | Reusable templates for labs, projects, reflections |
 | `docs/` | Student-facing guidance (AI use, submission, FAQs) |
-| `setup/` | Binder, Colab, Replit, and troubleshooting instructions |
+| `setup/` | Binder, Colab, local installation, Replit, and troubleshooting instructions |
 | `data/` | Optional synthetic sample datasets for instructor-created extensions; file reading is not part of the core course |
 | `COURSE_MAP.md` | Module-by-module overview |
 | `ASSESSMENT_OVERVIEW.md` | Student-facing assessment expectations |
 | `PROGRAM_OVERVIEW.md` | Program design and goals |
 | `INSTRUCTOR_GUIDE.md` | Teaching and delivery guidance |
 | `IMPACT_METRICS.md` | Evaluation and outcome tracking |
+| `tests/` and `scripts/check_notebooks.py` | Maintainer-only notebook execution expectations and validation |
+| `RELEASING.md` | Versioning and release checklist |
 
 ---
 

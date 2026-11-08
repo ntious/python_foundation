@@ -13,6 +13,10 @@ The course is designed to be:
 
 ## Resource Identity and Adoption
 
+For a quick adoption, review the outcomes and course map, choose the modules and prerequisites, test your students' environment, and publish your local grading and support arrangements. For one module, include its prerequisite examples and prediction/reflection prompts rather than assigning an isolated code cell. See the detailed workload checklist below and [local setup](setup/local_instructions.md).
+
+The reading website keeps worked Parsons arrangements collapsed until a learner chooses to reveal them. The source notebooks intentionally retain their existing worked scaffolds. These are public learning materials, not secure examinations; use separately maintained assessment questions if answers must be withheld. Do not duplicate the entire notebook sequence into student/instructor copies.
+
 Use the [author-written OER learning outcomes](LEARNING_OUTCOMES.md) and their [module mapping](COURSE_MAP.md) when selecting materials. This resource is not an official university course or catalog. Keep your institution's approved course title, description, outcomes, and local assessment policies in your own syllabus or alignment document, separate from the OER's identity and license grant.
 
 Before redistribution, review [licensing, attribution, and institutional exclusions](OER_LICENSE.md). Confirm permission for any third-party or institutional material you add and mark its terms separately. Preserve creator credit and indicate adaptations; do not imply endorsement by the author or an institution. Neither adoption nor availability establishes credit equivalence or institutional approval.
@@ -100,7 +104,7 @@ Use one existing cell at a time instead of adding a lecture. For Module 6's **AN
 
 ### Help and Notebook Troubleshooting
 
-Online learners may miss that a cell is waiting for `input()`, that earlier variables are missing after a restart, or that the website cannot execute code. Check cell order and input prompts, and distinguish intentional debugging examples from unexpected failures. Do not use “Run All must pass” as a blanket grading rule: some course cells are intentionally broken.
+Online learners may miss that a cell is waiting for `input()`, or that earlier variables are missing after a restart. Most website code blocks are reading examples; the explicitly labelled explorers in Lessons 05, 07, and 08 execute edited Python. Use Binder, Colab, or a local notebook for the full activities and input prompts. Check cell order and distinguish intentional debugging examples from unexpected failures. Do not use “Run All must pass” as a blanket grading rule: some course cells are intentionally broken.
 
 Link the existing [troubleshooting guide](setup/troubleshooting.md) and [notebook guide](docs/how_to_use_notebooks.md). Ask help requests to include the platform, notebook and section, expected/actual result, exact error text, and one attempted fix. Use small synthetic examples, never credentials or personal records. Provide private help for sensitive issues; do not require public disclosure of a student's difficulties.
 

@@ -1,0 +1,5 @@
+# Maintainer tools only. Student/Binder dependencies stay in .binder/requirements.txt.
+nbclient==0.10.2
+nbformat==5.10.4
+playwright==1.64.0
+ruff==0.14.3

@@ -140,7 +140,10 @@ def check():
             search = page.get_by_role('textbox', name='Search')
             page.locator('.md-header__button[for="__search"]').click()
             page.wait_for_function('!document.querySelector(".md-search__input").disabled')
-            search.fill('Mid-course')
+            # Exercise real key events: Material's search observers also track
+            # keyboard/focus events, which a single synthetic fill can race.
+            search.fill('')
+            search.press_sequentially('Mid-course', delay=80)
             page.locator('.md-search-result__link').first.wait_for(state='visible', timeout=30000)
             assert 'Mid-course' in page.locator('.md-search-result').inner_text()
             assert not errors, errors

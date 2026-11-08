@@ -39,6 +39,8 @@
           'Step ' + (position + 1) + ' of ' + steps.length + ': line ' + step.line + ' runs next.';
         node('h4', final ? 'Code — execution ended' : 'Code — highlighted line runs next', view);
         const code = node('pre', undefined, view);
+        code.tabIndex = 0;
+        code.setAttribute('aria-label', 'Execution trace code; use arrow keys to scroll');
         source.split('\n').forEach(function (line, i) {
           const row = node('span', (i + 1) + '  ' + line + '\n', code);
           if (step.line === i + 1) { row.className = 'trace-current'; row.setAttribute('aria-current', 'step'); }
@@ -54,7 +56,9 @@
           values.forEach(([name, value]) => { const row = node('tr', undefined, body); node('td', name, row); node('td', value, row); });
         }
         node('h4', 'Output so far', view);
-        node('pre', step.output || '(No output yet.)', view);
+        const output = node('pre', step.output || '(No output yet.)', view);
+        output.tabIndex = 0;
+        output.setAttribute('aria-label', 'Output so far; use arrow keys to scroll');
         if (final && error) node('pre', error, view).className = 'trace-error';
         back.disabled = position === 0; next.disabled = position === steps.length - 1;
         restart.disabled = false;
