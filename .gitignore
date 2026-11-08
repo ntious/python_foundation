@@ -63,6 +63,14 @@ Desktop.ini
 .local/
 /docs/maintenance_review.md
 /RELEASING.md
+/CHANGELOG.md
+/website/README.md
+*_Author_Checklist.md
+*_Reviewer_Response.md
+*_Revision_Notes.md
+*_Execution_Record.md
+PROVENANCE_INVENTORY.csv
+BEGINNER_TRIAL.md
 *.zip
 *.tar
 *.gz

@@ -1,5 +1,6 @@
 """Check generated links, fragment targets, source preservation, and search coverage."""
 import json
+import zipfile
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
@@ -25,8 +26,15 @@ class Page(HTMLParser):
 
 
 def check():
-    for private_page in ('docs/maintenance_review', 'RELEASING', 'website/README'):
+    for private_page in ('docs/maintenance_review', 'RELEASING', 'website/README', 'CHANGELOG', '.local'):
         assert not (OUTPUT / private_page).exists(), f'Internal page published: {private_page}'
+    with zipfile.ZipFile(ROOT / 'textbook_files/Python_Foundations_Companions.zip') as archive:
+        assert archive.testzip() is None, 'Companion archive is damaged'
+        private_markers = ('Reviewer_Response', 'Author_Checklist', 'Revision_Notes',
+                           'Execution_Record', 'PROVENANCE_INVENTORY', 'BEGINNER_TRIAL',
+                           '/verification/', '/tools/')
+        for name in archive.namelist():
+            assert not any(marker in name for marker in private_markers), f'Internal companion file published: {name}'
     pages = {p.resolve(): Page(p.read_text()) for p in OUTPUT.rglob('*.html')}
     errors = []
     count = 0

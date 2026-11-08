@@ -11,6 +11,20 @@ ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / '.site-build/source'
 REPO = 'https://github.com/ntious/python_foundation'
 
+# Publish approved course documents, not every Markdown file in a working folder.
+PUBLIC_MARKDOWN = {
+    '.': ('README.md', 'QUICKSTART.md', 'ASSESSMENT_OVERVIEW.md', 'COURSE_MAP.md',
+          'IMPACT_METRICS.md', 'INSTRUCTOR_GUIDE.md', 'LEARNING_OUTCOMES.md',
+          'OER_LICENSE.md', 'PROGRAM_OVERVIEW.md'),
+    'docs': ('accessibility.md', 'ai_usage_guidelines.md', 'assignment_submission_guide.md',
+             'course_overview.md', 'faq.md', 'glossary.md', 'grading_overview.md',
+             'how_to_use_notebooks.md', 'peer_learning.md', 'stretch_prompts.md'),
+    'setup': ('binder_instructions.md', 'colab_instructions.md', 'local_instructions.md',
+              'replit_instructions.md', 'troubleshooting.md'),
+    'templates': ('fix_log_template.md', 'mid_course_reflection.md', 'reflection_template.md'),
+    'data': ('README.md', 'sample_data_dictionary.md'),
+}
+
 EXPLORERS = {
     '05_decision_making.ipynb': (
         '# Single condition example: disk usage warning', 'decision',
@@ -100,12 +114,8 @@ def build():
     if SOURCE.exists():
         shutil.rmtree(SOURCE)  # Only our generated source directory.
     SOURCE.mkdir(parents=True)
-    paths = list(ROOT.glob('*.md'))
-    for folder in ('docs', 'setup', 'templates', 'data'):
-        paths.extend((ROOT / folder).glob('*.md'))
+    paths = [ROOT / folder / name for folder, names in PUBLIC_MARKDOWN.items() for name in names]
     for path in paths:
-        if path in (ROOT / 'docs/maintenance_review.md', ROOT / 'RELEASING.md'):
-            continue  # Internal notes must never be republished from a local copy.
         destination = SOURCE / path.relative_to(ROOT)
         if path == ROOT / 'README.md':
             destination = SOURCE / 'repository.md'
