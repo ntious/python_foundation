@@ -23,7 +23,7 @@ The optional explorers run edited Python on demand. The [accessibility and acces
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24046034.svg)](https://doi.org/10.5281/zenodo.24046034)
 
-To cite the archived **v1.0.0** release: Nti, I. K. *Introduction to Python: A Guided Beginner Course* (Version 1.0.0). Zenodo. [https://doi.org/10.5281/zenodo.24046035](https://doi.org/10.5281/zenodo.24046035). The badge links to the record for all versions; the version DOI identifies this specific release. This archive includes the OER and textbook companion files, not a separate publication of the textbook.
+Cite the public archive of *Introduction to Python: A Guided Beginner Course* by Isaac Kofi Nti on [Zenodo](https://doi.org/10.5281/zenodo.24046034). The badge links to the record for all versions; select a public version on Zenodo for its specific DOI. This archive includes the OER and textbook companion files, not a separate publication of the textbook.
 
 [Visit the course website](https://ntious.github.io/python_foundation/) for searchable lessons, notebook downloads, and a guided path through the course.
 
