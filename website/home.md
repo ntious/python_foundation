@@ -84,7 +84,7 @@ No account is needed. Python loads when you first run an explorer, so an interne
 
 ## Optional companion textbook
 
-*Python Foundations* by Isaac K. Nti is [available on Amazon](https://a.co/d/0fX8mTkM). Purchasing the book is optional; the lessons, notebooks, and interactive explorers remain freely accessible.
+*Python Foundations* by Isaac K. Nti is [available on Amazon](https://www.amazon.com/dp/B0HQVQR2VH). Purchasing the book is optional; the lessons, notebooks, and interactive explorers remain freely accessible.
 
 [Download the textbook companion files (ZIP)](https://raw.githubusercontent.com/ntious/python_foundation/main/textbook_files/Python_Foundations_Companions.zip). The OER's Zenodo DOI identifies the repository archive and included files, not a separate publication of the book.
 
