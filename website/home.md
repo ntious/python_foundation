@@ -82,6 +82,12 @@ Try these optional explorers when you reach the matching lesson. Edit the Python
 
 No account is needed. Python loads when you first run an explorer, so an internet connection is needed and the first run may take a moment. These are optional practice, with no extra submission.
 
+## Optional companion textbook
+
+*Python Foundations* by Isaac K. Nti is [available on Amazon](https://a.co/d/0fX8mTkM). Purchasing the book is optional; the lessons, notebooks, and interactive explorers remain freely accessible.
+
+[Download the textbook companion files (ZIP)](https://raw.githubusercontent.com/ntious/python_foundation/main/textbook_files/Python_Foundations_Companions.zip). The OER's Zenodo DOI identifies the repository archive and included files, not a separate publication of the book.
+
 ## Help is part of learning
 
 [Notebook basics](docs/how_to_use_notebooks.md) · [Troubleshooting](setup/troubleshooting.md) · [Using AI responsibly](docs/ai_usage_guidelines.md) · [Project expectations](notebooks/12_guided_mini_project.md)

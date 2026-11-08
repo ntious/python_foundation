@@ -8,6 +8,12 @@ To cite the archived **v1.0.0** release: Nti, I. K. *Introduction to Python: A G
 
 This is an author-maintained open educational resource, not an official university catalog, syllabus, or credit-bearing offering. Its [OER learning outcomes](LEARNING_OUTCOMES.md) describe these materials, not an institution's official course outcomes. Adopting instructors map the resource to their own approved courses and policies. See [licensing and attribution](OER_LICENSE.md) for scope and exclusions.
 
+## Optional companion textbook
+
+*Python Foundations* by Isaac K. Nti is [available on Amazon](https://a.co/d/0fX8mTkM). Purchasing the book is optional; the lessons, notebooks, and interactive explorers remain freely accessible.
+
+[Download the textbook companion files (ZIP)](https://raw.githubusercontent.com/ntious/python_foundation/main/textbook_files/Python_Foundations_Companions.zip). The repository's Zenodo DOI identifies the archived OER and included files, not a separate publication of the book.
+
 ## Program Overview
 
 This repository contains beginner-friendly learning materials for a 1-credit Python course designed for students with little or no programming background, particularly those from non-computing disciplines.
