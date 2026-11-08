@@ -3,6 +3,7 @@ message: "Please cite this OER when reusing it. Code is MIT; original instructio
 title: "Introduction to Python: A Guided Beginner Course"
 type: software
 version: 1.0.1
+doi: 10.5281/zenodo.24061606
 identifiers:
   - type: doi
     value: 10.5281/zenodo.24046034
