@@ -40,4 +40,4 @@ python scripts/check_local_setup.py
 
 After building the site, also run `python scripts/test_accessibility_browser.py` and `python scripts/test_visualizer.py`. The first runs in Pages CI; the latter downloads the real pinned Pyodide runtime and runs in a separate weekly/manual workflow so a CDN outage does not block every documentation deployment. Both start their own local server. Browser checks require `python -m playwright install --with-deps chromium` on CI Linux hosts. These focused checks do not certify full accessibility.
 
-The generator wraps existing worked Parsons arrangements in native disclosures. Notebook paths, contents, and downloads remain unchanged. See [maintenance scope](../docs/maintenance_review.md) and [release policy](../RELEASING.md).
+The generator wraps existing worked Parsons arrangements in native disclosures. Notebook paths, contents, and downloads remain unchanged. Internal review and release-policy notes are local-only and are not published on the course website.

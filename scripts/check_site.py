@@ -25,6 +25,8 @@ class Page(HTMLParser):
 
 
 def check():
+    for private_page in ('docs/maintenance_review', 'RELEASING', 'website/README'):
+        assert not (OUTPUT / private_page).exists(), f'Internal page published: {private_page}'
     pages = {p.resolve(): Page(p.read_text()) for p in OUTPUT.rglob('*.html')}
     errors = []
     count = 0

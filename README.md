@@ -186,7 +186,6 @@ Instructors are encouraged to:
 | `INSTRUCTOR_GUIDE.md` | Teaching and delivery guidance |
 | `IMPACT_METRICS.md` | Evaluation and outcome tracking |
 | `tests/` and `scripts/check_notebooks.py` | Maintainer-only notebook execution expectations and validation |
-| `RELEASING.md` | Versioning and release checklist |
 
 ---
 

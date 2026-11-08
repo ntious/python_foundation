@@ -60,6 +60,9 @@ Desktop.ini
 # Misc
 # =========================
 .site-build/
+.local/
+/docs/maintenance_review.md
+/RELEASING.md
 *.zip
 *.tar
 *.gz

@@ -9,7 +9,7 @@
 - Site deployment gated on notebook, browser navigation, accessibility, and site preservation checks; separate weekly/manual real-Python explorer checks.
 - Improved keyboard access to code scrolling and visible focus contrast; clearer progress-storage and execution instructions.
 
-These are compatible maintenance improvements in the working repository. They have not been assigned a new release DOI. See [release policy](RELEASING.md) before publishing another version.
+These are compatible maintenance improvements in the working repository. They have not been assigned a new release DOI.
 
 ## 1.0.0 — 2026-11-08
 

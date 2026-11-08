@@ -101,10 +101,11 @@ def build():
         shutil.rmtree(SOURCE)  # Only our generated source directory.
     SOURCE.mkdir(parents=True)
     paths = list(ROOT.glob('*.md'))
-    paths.append(ROOT / 'website/README.md')
     for folder in ('docs', 'setup', 'templates', 'data'):
         paths.extend((ROOT / folder).glob('*.md'))
     for path in paths:
+        if path in (ROOT / 'docs/maintenance_review.md', ROOT / 'RELEASING.md'):
+            continue  # Internal notes must never be republished from a local copy.
         destination = SOURCE / path.relative_to(ROOT)
         if path == ROOT / 'README.md':
             destination = SOURCE / 'repository.md'
@@ -153,8 +154,6 @@ def build():
             group['Student guide'].extend([{'Beginner glossary': 'docs/glossary.md'}, {'Accessibility and access': 'docs/accessibility.md'}])
         if 'Setup & help' in group:
             group['Setup & help'].insert(3, {'Local installation': 'setup/local_instructions.md'})
-        if 'For instructors' in group:
-            group['For instructors'].extend([{'Maintenance review': 'docs/maintenance_review.md'}, {'Release policy': 'RELEASING.md'}])
     # Absolute paths keep the generated config independent of its own location.
     config['docs_dir'] = str(SOURCE)
     config['site_dir'] = str(ROOT / '.site-build/output')

@@ -16,4 +16,4 @@ Tell your instructor which lesson, device/browser, and step caused difficulty. Y
 
 ## Verification scope
 
-Maintainer checks cover image text alternatives, content heading structure, visible keyboard focus, keyboard interaction, reduced-motion preferences, and representative 320-pixel layouts. Automated checks and developer browser testing cannot establish full screen-reader usability; assistive-technology and student feedback remain part of evaluation. See [maintenance review](maintenance_review.md) for the improvement scope and outstanding external checks.
+Maintainer checks cover image text alternatives, content heading structure, visible keyboard focus, keyboard interaction, reduced-motion preferences, and representative 320-pixel layouts. Automated checks and developer browser testing cannot establish full screen-reader usability; assistive-technology and student feedback remain part of evaluation.
